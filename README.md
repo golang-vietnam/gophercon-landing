@@ -1,2 +1,1 @@
-# gophercon-landing
-GopherCon Vietnam Landing page
+Landing for gophercon.vn
