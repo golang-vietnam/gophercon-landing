@@ -1017,6 +1017,7 @@ form label {
 }
 #gtco-offcanvas a {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 30px !important;
 }
 #gtco-offcanvas a:hover {
   color: rgba(255, 255, 255, 0.8);
