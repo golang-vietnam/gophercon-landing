@@ -46,9 +46,10 @@ let colors = {
   transparent: 'transparent',
 
   primary: 'var(--primary)',
+  error: 'var(--error)',
 
   black: 'var(--black)',
-  'black-70': 'var(--black-70)',
+  'black-75': 'var(--black-75)',
   'black-50': 'var(--black-50)',
   'black-25': 'var(--black-25)',
 
@@ -58,12 +59,12 @@ let colors = {
   'white-25': 'var(--white-25)',
 
   'grey-darkest': '#3d4852',
-  'grey-darker': '#454545',
-  'grey-dark': '#6E6E6E',
+  'grey-darker': '#606f7b',
+  'grey-dark': '#8795a1',
   grey: '#b8c2cc',
-  'grey-light': '#C6C6C6',
-  'grey-lighter': '#E8E8E8',
-  'grey-lightest': '#F8F8F8',
+  'grey-light': '#dae1e7',
+  'grey-lighter': '#f1f5f8',
+  'grey-lightest': 'var(--grey-lightest)',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -257,6 +258,7 @@ module.exports = {
   */
 
   textSizes: {
+    0: '0',
     xxs: '.6875rem', // 11px
     xs: '.75rem', // 12px
     sm: '.875rem', // 14px
@@ -673,9 +675,8 @@ module.exports = {
     '9': '2.25rem', // 36px
     '10': '2.5rem', // 40px
     '11': '2.75rem', // 44px
-    '12': '3rem', // 48px
-    '13': '3.25rem', // 52px
     '16': '4rem', // 64px
+    '18': '4.5rem', // 72px
     '20': '5rem', // 80px
     '24': '6rem', // 96px
     '25': '6.25rem', // 100px
@@ -722,6 +723,8 @@ module.exports = {
     '32': '8rem',
     '36': '9rem',
     '40': '10rem',
+    '1/12': '8.33333%',
+    '1/4': '25%',
   },
 
   /*
