@@ -37,6 +37,12 @@ const Document = ({ Html, Head, Body, children, routeInfo, siteData }) => {
           type="image/png"
           sizes="32x32"
         />
+        <link
+          href="/favicons/favicon-96x96.png"
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+        />
       </Head>
       <Body>{children}</Body>
     </Html>
