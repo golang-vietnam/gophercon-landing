@@ -1,0 +1,88 @@
+.header__link {
+  @apply text-black;
+  transition: all 0.3s ease;
+
+  &.active {
+    @apply text-primary pointer-events-none;
+  }
+}
+
+.mobile-nav-btn {
+  margin-right: 5px;
+  cursor: pointer;
+  width: 26px;
+  height: 20px;
+  position: relative;
+
+  span {
+    width: 28px;
+    height: 4px;
+    @apply bg-black;
+    display: block;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transition: all 0.3s ease;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+      margin-top: -2px;
+    }
+
+    &:nth-child(3) {
+      bottom: 0px;
+    }
+  }
+}
+
+.mobile-nav-btn.opened {
+  span {
+    &:nth-child(1) {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      bottom: auto;
+      top: 50%;
+    }
+  }
+}
+
+.mobile-nav {
+  position: absolute;
+  overflow: hidden;
+  visibility: hidden;
+  top: 93px;
+  @apply pin-x;
+  transition: visibility 0.3s ease;
+}
+
+.mobile-nav__container {
+  @apply bg-black text-center list-reset font-medium py-4;
+  transform: translateY(-102%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-nav.active {
+  visibility: visible;
+  .mobile-nav__container {
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav__link {
+  @apply text-white py-3 block text-lg font-semibold;
+
+  &.active {
+    @apply text-primary;
+  }
+}
