@@ -99,21 +99,25 @@ const WorkshopSection = () => (
             </p>
           </div>
 
-          <h3 className="text-center text-white mt-20 mb-10">Venues</h3>
-          <div className="mx-auto lg:w-4/5 text-white">
-            <div className="row flex text-center flex-wrap">
-              <div className="col sm:w-1/3 w-full mb-10">
-                <h5 className="text-xl mb-2">Hoa Sen University</h5>
-                <p className="text-lg">8 Nguyen Van Trang, D1</p>
-              </div>
-              <div className="col sm:w-1/3 w-full mb-10">
-                <h5 className="text-xl mb-2">RMIT University</h5>
-                <p className="text-lg">702 Nguyen Van Linh, D7</p>
-              </div>
-              <div className="col sm:w-1/3 w-full mb-10">
-                <h5 className="text-xl mb-2">HCMUS</h5>
-                <p className="text-lg">227 Nguyen Van Cu, D5</p>
-              </div>
+          <div className="mt-20 mx-auto text-center text-white">
+            <h2 className="text-center text-white mt-20 mb-10">Venue</h2>
+
+            <h6 className="text-base text-white font-medium mb-3">
+              The workshop will be held at:
+            </h6>
+
+            <h4 className="text-white text-2xl font-medium mb-14">
+              Round Floor, Copac Square Building 12 Ton Dan, District 4, Ho Chi
+              Minh City
+            </h4>
+
+            <div className="venue-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.636676123797!2d106.70533511549081!3d10.762459062392656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f693a5128df%3A0x76966b260234240b!2zQ29wYWMgU3F1YXJlLCAxMiDEkMaw4budbmcgVMO0biDEkOG6o24sIFBoxrDhu51uZyAxMywgUXXhuq1uIDQsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1539966450876"
+                className="absolute pin"
+                frameBorder="0"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
