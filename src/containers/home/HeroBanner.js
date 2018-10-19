@@ -19,18 +19,18 @@ const HeroBannerSection = () => (
           </div>
 
           <p className="text-xl text-white font-semibold mt-2 mb-10">
-            December 1 2018
+            December 2018
           </p>
           <div className="flex flex-wrap justify-center">
             <a
               className="font-medium mx-3 px-5 py-2 text-primary bg-white inline-block"
-              href="#"
+              href="https://airtable.com/shrz8wdKZjuOnCAxV"
             >
               Become a sponsor
             </a>
             <a
               className="font-medium mx-3 px-5 py-2 sm:mt-0 mt-4 text-primary bg-white inline-block"
-              href="#"
+              href="https://www.papercall.io/gopherconvn2018"
             >
               Become a speaker
             </a>
