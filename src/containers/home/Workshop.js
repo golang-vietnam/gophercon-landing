@@ -99,7 +99,7 @@ const WorkshopSection = () => (
             </p>
           </div>
 
-          <div className="mt-20 mx-auto text-center text-white">
+          <div className="mt-20 mx-auto text-center text-white sm:w-3/4">
             <h2 className="text-center text-white mt-20 mb-10">Venue</h2>
 
             <h6 className="text-base text-white font-medium mb-3">
@@ -111,7 +111,7 @@ const WorkshopSection = () => (
               Minh City
             </h4>
 
-            <div className="venue-map">
+            <div className="workshop-map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.636676123797!2d106.70533511549081!3d10.762459062392656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f693a5128df%3A0x76966b260234240b!2zQ29wYWMgU3F1YXJlLCAxMiDEkMaw4budbmcgVMO0biDEkOG6o24sIFBoxrDhu51uZyAxMywgUXXhuq1uIDQsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1539966450876"
                 className="absolute pin"
