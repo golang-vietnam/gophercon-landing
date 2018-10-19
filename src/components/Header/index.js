@@ -20,8 +20,8 @@ const links = [
     to: '#workshop',
   },
   {
-    name: 'Schedule',
-    to: '#schedule',
+    name: 'Conference',
+    to: '#conference',
   },
 ]
 

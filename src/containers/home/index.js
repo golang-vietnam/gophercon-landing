@@ -2,7 +2,7 @@ import React from 'react'
 import DefaultLayout from '@/components/DefaultLayout'
 import PageHead from '@/components/PageHead'
 import HeroBanner from './HeroBanner'
-import Schedule from './Schedule'
+import Conference from './Conference'
 import Workshop from './Workshop'
 import Speakers from './Speakers'
 import Sponsors from './Sponsors'
@@ -15,7 +15,7 @@ const Home = () => (
     <Speakers />
     <Sponsors />
     <Workshop />
-    <Schedule />
+    <Conference />
     <Venue />
   </DefaultLayout>
 )

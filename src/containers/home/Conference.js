@@ -130,15 +130,17 @@ const events = [
   },
 ]
 
-const ScheduleSection = () => (
+const ConferenceSection = () => (
   <section
-    id="schedule"
+    id="conference"
     className="bg-grey-lightest sm:pt-24 pt-10 sm:pb-40 pb-32"
   >
     <div className="container pb-8r">
       <div className="row flex items-center flex-wrap">
         <div className="col w-full">
-          <h2 className="text-primary text-3xl text-center mb-16">Schedule</h2>
+          <h2 className="text-primary text-3xl text-center mb-16">
+            Conference
+          </h2>
 
           <div className="timeline">
             {events.map(
@@ -192,4 +194,4 @@ const ScheduleSection = () => (
   </section>
 )
 
-export default ScheduleSection
+export default ConferenceSection
