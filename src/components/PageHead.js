@@ -35,7 +35,7 @@ const PageHead = ({
     <meta property="og:title" content={title} />
     <meta property="og:description" content={desc} />
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:site_name" content="WeBuild" />
+    <meta property="og:site_name" content={title} />
 
     <meta property="og:image" content={`${siteRoot}/images/${ogImagePath}`} />
     <meta property="og:image:type" content="image/png" />
