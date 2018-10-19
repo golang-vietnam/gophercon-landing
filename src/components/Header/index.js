@@ -16,6 +16,10 @@ const links = [
     to: '#sponsors',
   },
   {
+    name: 'Workshop',
+    to: '#workshop',
+  },
+  {
     name: 'Schedule',
     to: '#schedule',
   },

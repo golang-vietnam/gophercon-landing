@@ -1,71 +1,76 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const speakers = [
   {
-    name: 'Christopher Molozian',
+    name: 'Stefan Meissner',
     info: (
       <p>
-        Erlang for GO developers
-        <br />
-        SP Digital IoT
+        Backend developer <br /> focusing on cloud architecture
       </p>
     ),
-    avatar: 'avatar',
+    avatar:
+      'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/35028/TRIODOS_STM_RGB_7414_closeup.jpg',
   },
   {
-    name: 'Christopher Molozian',
+    name: 'Grant Griffiths',
     info: (
       <p>
-        Erlang for GO developers
+        Senior software engineer
         <br />
-        SP Digital IoT
+        at GE Digital
       </p>
     ),
-    avatar: 'avatar',
+    avatar:
+      'https://secure.gravatar.com/avatar/f982183e1db9eed435f2097d10281f7c?s=500',
   },
   {
-    name: 'Christopher Molozian',
+    name: 'Sau Sheong Chang',
     info: (
       <p>
-        Erlang for GO developers
+        Software engineer expert
         <br />
-        SP Digital IoT
+        Tech speaker and author
       </p>
     ),
-    avatar: 'avatar',
+    avatar:
+      'https://secure.gravatar.com/avatar/ee191858f0d96ad93098694537f71998?s=500',
   },
   {
-    name: 'Christopher Molozian',
+    name: 'Deepesh naini',
     info: (
       <p>
-        Erlang for GO developers
+        Polygot developer
         <br />
-        SP Digital IoT
+        Passionate about building cool products
       </p>
     ),
-    avatar: 'avatar',
+    avatar:
+      'https://secure.gravatar.com/avatar/3692ed4ac12d1d367148d6c7afab5908?s=500',
   },
   {
-    name: 'Christopher Molozian',
+    name: 'Aleksei Shaikhaleev',
     info: (
       <p>
-        Erlang for GO developers
+        Backend developer
         <br />
-        SP Digital IoT
+        at Travelpayouts.com
       </p>
     ),
-    avatar: 'avatar',
+    avatar:
+      'https://secure.gravatar.com/avatar/5141bce120e3b351e2a5156366bc8a24?s=500',
   },
   {
-    name: 'Christopher Molozian',
+    name: 'CRajeev N Bharshetty',
     info: (
       <p>
-        Erlang for GO developers
+        Computer science nerd
         <br />
-        SP Digital IoT
+        Working on building reliability at scale on 300+ Micro-services at
+        GO-JEK.
       </p>
     ),
-    avatar: 'avatar',
+    avatar:
+      'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
   },
 ]
 
@@ -81,7 +86,14 @@ const SpeakersSection = () => (
             {speakers.map(({ name, info, avatar }, index) => (
               <div className="col sm:w-1/3 w-full mb-14" key={index}>
                 <div className="leading-none">
-                  <img className="rounded-full" src={`/images/${avatar}.png`} />
+                  <div
+                    className="bg-cover bg-no-repeat bg-center rounded-full mx-auto"
+                    style={{
+                      backgroundImage: `url(${avatar})`,
+                      width: '120px',
+                      height: '120px',
+                    }}
+                  />
                 </div>
                 <h4 className="mt-6 mb-1">{name}</h4>
                 {info}
