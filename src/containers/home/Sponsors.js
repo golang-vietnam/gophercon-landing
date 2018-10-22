@@ -30,7 +30,7 @@ const rows = [
         image: 'designveloper',
       },
       {
-        href: 'https://www.axonactive.com/',
+        href: 'https://global.axon.com/',
         image: 'axon',
       },
     ],
