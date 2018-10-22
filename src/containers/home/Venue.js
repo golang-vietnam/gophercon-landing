@@ -8,7 +8,7 @@ const VenueSection = () => (
           <h2 className="text-white text-3xl text-center mb-12">Venue</h2>
 
           <h6 className="text-base text-white font-medium mb-3">
-            GopherCon Vietnam 2018 will be held at:
+            The conference will be held at:
           </h6>
           <h4 className="text-white text-2xl font-medium mb-14">
             195 Dien Bien Phu, Binh Thanh, Ho Chi Minh City

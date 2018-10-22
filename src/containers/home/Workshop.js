@@ -86,28 +86,27 @@ const WorkshopSection = () => (
               style={{
                 width: 160,
                 height: 160,
-                backgroundImage: `url(https://secure.gravatar.com/avatar/ee191858f0d96ad93098694537f71998?s=500`,
+                backgroundImage: `url(https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.0-9/13406795_1410150679283934_3538774132545885006_n.png?_nc_cat=110&_nc_eui2=AeFgV6nYNRVYzn6x9kwodEqh6hBwjSmsozu2zUH-6sbcPVqnacXMmZlixhwdu2nGEOTkQ9qqUsjm_Ienxm_nRr7l4LwIia7GyRroi8oJV33IAw&_nc_ht=scontent.fsgn5-3.fna&oh=b9aa25ab6efe11f9b277de4debcf6eb7&oe=5C534899`,
               }}
             />
-            <h4 className="text-white text-xl mt-6 mb-4">Sau Sheong Chang</h4>
+            <h4 className="text-white text-xl mt-6 mb-4">Golang Vietnam</h4>
             <p className="text-white">
-              Sau Sheong has been doing software development for 22 years,
-              mostly in web application development. He is active in the Ruby
-              and Go developer communities have have contributed to open source
-              projects and spoke at meetups and conferences. Sau Sheong has also
-              published 4 programming-related books, on Ruby and Go.
+              The member from our community who worked with Go for years
+               will walk you through those topics with hand-ons experience. 
+               Prepare yourself laptop with laptop and golang installed on it.
             </p>
           </div>
 
           <div className="mt-20 mx-auto text-center text-white sm:w-3/4">
-            <h2 className="text-center text-white mt-20 mb-10">Venue</h2>
-
             <h6 className="text-base text-white font-medium mb-3">
               The workshop will be held at:
             </h6>
 
-            <h4 className="text-white text-2xl font-medium mb-14">
-              Round Floor, Copac Square Building 12 Ton Dan, District 4, Ho Chi
+            <h4 className="text-white text-2xl font-medium">
+              CoderSchool
+            </h4>
+            <h4 className="text-white text-xl font-medium mb-14">
+              Copac Square Building 12 Ton Dan, D4, Ho Chi
               Minh City
             </h4>
 
