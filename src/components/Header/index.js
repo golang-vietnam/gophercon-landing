@@ -87,7 +87,7 @@ class Header extends React.Component {
       <header className="header border-b border-grey-lighter bg-white fixed pin-x pin-t z-10">
         <div
           className={
-            'mobile-nav sm:hidden' +
+            'mobile-nav lg:hidden' +
             (this.state.mobileNavOpened ? ' active' : '')
           }
         >
@@ -121,7 +121,7 @@ class Header extends React.Component {
             <div
               onClick={this.toggleMobileNavOpened}
               className={
-                'mobile-nav-btn sm:hidden' +
+                'mobile-nav-btn lg:hidden' +
                 (this.state.mobileNavOpened ? ' opened' : '')
               }
             >
@@ -129,7 +129,7 @@ class Header extends React.Component {
               <span />
               <span />
             </div>
-            <nav className="sm:block hidden">
+            <nav className="lg:block hidden">
               <ul className="list-reset font-medium">
                 {links.map(({ name, to }) => (
                   <li className="inline-block ml-10" key={name}>
