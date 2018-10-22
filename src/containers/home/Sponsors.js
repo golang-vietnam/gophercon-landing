@@ -67,6 +67,10 @@ const rows = [
         href: 'http://www.coderschool.vn/',
         image: 'coderschool',
       },
+      {
+        href: 'https://www.grokking.org/',
+        image: 'grokking',
+      },
     ],
   },
 ]
@@ -89,7 +93,7 @@ const SponsorsSection = () => (
                 </h4>
               </div>
               {sponsors.map(({ href, image }) => (
-                <div className="col sm:w-1/3 mx-auto mb-8" key={image}>
+                <div className="col sm:w-1/3 sm:mx-0 mx-auto mb-8" key={image}>
                   <a
                     href={href}
                     className="shadow block leading-none text-0"
