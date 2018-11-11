@@ -5,10 +5,6 @@ const rows = [
     name: 'Platinum',
     sponsors: [
       {
-        href: 'https://www.chotot.com/',
-        image: 'chotot',
-      },
-      {
         href: 'https://www.sendo.vn',
         image: 'sendo',
       },
@@ -22,35 +18,15 @@ const rows = [
     name: 'Gold',
     sponsors: [
       {
-        href: 'http://tiki.vn',
-        image: 'tiki',
-      },
-      {
-        href: 'https://www.designveloper.com/',
-        image: 'designveloper',
-      },
-      {
-        href: 'https://global.axon.com/',
-        image: 'axon',
+        href: 'https://dwarves.foundation',
+        image: 'dwarves',
       },
     ],
   },
   {
     name: 'Silver',
     sponsors: [
-      {
-        href: 'https://dwarves.foundation',
-        image: 'dwarves',
-      },
-      {
-        href: 'https://missmp.eu/',
-        image: 'missmoney',
-      },
-      {
-        href: 'https://lozi.vn',
-        image: 'lozi',
-      },
-    ],
+          ],
   },
   {
     name: 'Supporters',

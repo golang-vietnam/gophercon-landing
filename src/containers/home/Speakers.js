@@ -24,43 +24,55 @@ const speakers = [
       'https://secure.gravatar.com/avatar/f982183e1db9eed435f2097d10281f7c?s=500',
   },
   {
-    name: 'Sau Sheong Chang',
+    name: 'Viet Tran',
     info: (
       <p>
-        Software engineer expert
+        Solution architect
         <br />
-        Tech speaker and author
+        at Sendo.vn
       </p>
     ),
     avatar:
-      'https://secure.gravatar.com/avatar/ee191858f0d96ad93098694537f71998?s=500',
+      'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/e6f4b652er_viettran_speaker.jpg',
   },
   {
-    name: 'Deepesh naini',
+    name: 'Tam Nguyen',
     info: (
       <p>
-        Polygot developer
+        Software & Devops Engineer
         <br />
-        Passionate about building cool products
+        at Anduin
       </p>
     ),
     avatar:
-      'https://secure.gravatar.com/avatar/3692ed4ac12d1d367148d6c7afab5908?s=500',
+      'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
   },
   {
-    name: 'Aleksei Shaikhaleev',
+    name: 'Roman Atachiants',
     info: (
       <p>
-        Backend developer
+        Head of engineering
         <br />
-        at Travelpayouts.com
+        at Grab
       </p>
     ),
     avatar:
-      'https://secure.gravatar.com/avatar/5141bce120e3b351e2a5156366bc8a24?s=500',
+      'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
   },
   {
-    name: 'CRajeev N Bharshetty',
+    name: 'Gaurav Agarwal',
+    info: (
+      <p>
+        Software Practitioner
+        <br />
+        Organizer for Chennai Gopher Community
+      </p>
+    ),
+    avatar:
+      'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uirzjki7c_Screen%20Shot%202018-11-10%20at%204.58.34%20PM.png',
+  },
+  {
+    name: 'Rajeev N Bharshetty',
     info: (
       <p>
         Computer science nerd
@@ -71,6 +83,18 @@ const speakers = [
     ),
     avatar:
       'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
+  },
+  {
+    name: 'Piyush Verma',
+    info: (
+      <p>
+        Director of Engineer
+        <br />
+        at Trusting Social
+      </p>
+    ),
+    avatar:
+      'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uxdute0wr_Screen%20Shot%202018-11-10%20at%203.04.26%20PM.png',
   },
 ]
 

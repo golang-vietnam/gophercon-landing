@@ -45,14 +45,14 @@ const events = [
   {
     highlighted: false,
     time: '11:00',
-    title: 'Genetic Algorithms in Go',
+    title: 'Golang and infrastructure works',
     desc:
-      "Genetic algorithms are metaheuristics that are based on the process of natural selection. This talk give a simple introduction to GA, with a couple of examples including evolving a phrase from Shakespeare's Hamlet, and also an image of Mona Lisa.",
+      "How we use Go to enable a fast pace development and deployment pipeline",
     speaker: {
       avatar:
-        'https://secure.gravatar.com/avatar/ee191858f0d96ad93098694537f71998?s=500',
-      name: 'Sau Sheong Chang',
-      desc: 'Software engineer expert',
+        'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
+      name: 'Tam Nguyen',
+      desc: 'Senior software engineer',
     },
   },
   {
@@ -63,64 +63,64 @@ const events = [
   {
     highlighted: false,
     time: '13:00',
-    title: 'Golang - Metric tracking and Nuances of Memory Management',
+    title: 'Anatomy of a Docker container',
     desc:
-      "Golang, we all know that it is a super fast, super developer friendly language.  But with all this speed around Golang it's very common for developers to suffer from pitfalls. I am gonna talk about how we can avoid those.",
+      "What are Containers and How is Docker made? It's a bunch of namespaces and cgroups put together to build the process isolations that we see. What are namespaces and how do they operate? The talk invokes one Linux namespace at a time, as system calls from a Golang code, up to a full-fledged container",
     speaker: {
       avatar:
-        'https://secure.gravatar.com/avatar/3692ed4ac12d1d367148d6c7afab5908?s=500',
-      name: 'Deepesh naini',
-      desc: 'Polygot developer',
+        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uxdute0wr_Screen%20Shot%202018-11-10%20at%203.04.26%20PM.png',
+      name: 'Piyush Verma',
+      desc: 'Director of Engineer',
     },
   },
   {
     highlighted: false,
     time: '13:45',
-    title: 'Concurrency in Ethereum (Blockchain)',
+    title: 'How Sendo.vn build a scalable architecture to grow 10X every year with Golang',
     speaker: {
       avatar:
-        'https://secure.gravatar.com/avatar/3692ed4ac12d1d367148d6c7afab5908?s=500',
-      name: 'Tu Nguyen',
-      desc: 'Erlang for GO developers',
+        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/e6f4b652er_viettran_speaker.jpg',
+      name: 'Viet Tran',
+      desc: 'Solution architect',
     },
   },
   {
     highlighted: false,
     time: '14:30',
-    title: 'Black Box Monitoring in Go',
+    title: `An investigative walk through of Go's channels `,
     desc:
-      "You've set up your favorite monitoring agent on all of your services and you have incredible visibility into the internals of your infrastructure. All seems good in the world, but can your end user actually use your service? In this talk we'll write a simple app that simulates end user activity.",
+      "This talk deeps dive into the inner workings of Go’s channels using an interactive debugger to understand it’s strengths and shortcomings. ",
     speaker: {
       avatar:
-        'https://secure.gravatar.com/avatar/f982183e1db9eed435f2097d10281f7c?s=500',
-      name: 'Grant Griffiths',
+        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uirzjki7c_Screen%20Shot%202018-11-10%20at%204.58.34%20PM.png',
+      name: 'Gaurav Agarwal',
       desc: 'Senior software engineer',
     },
   },
   {
     highlighted: false,
     time: '15:00',
-    title: 'Why would anyone embed Javascript into the Go app? (we do)',
+    title: 'Products Insights & Experimentation Platform',
     desc:
-      "Golang is nice, fast and static, everyone knows that. Why would you even want to embed Javascript into that perfectly tuned Go machine? I'm going to tell how we process data with the rules written in Javascript in our Go app (and it works surprisingly fine).",
+      "TBD",
     speaker: {
       avatar:
-        'https://secure.gravatar.com/avatar/5141bce120e3b351e2a5156366bc8a24?s=500',
-      name: 'Aleksei Shaikhaleev',
-      desc: 'Backend developer',
+        'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
+      name: 'Roman Atachiants',
+      desc: 'Grab head of engineer',
     },
   },
   {
     highlighted: false,
     time: '15:45',
-    title: 'Resiliency in Distributed Systems',
+    title: 'Production Ready Microservices at Scale',
     desc:
-      'Keeping distributed systems up and running is a hard problem to solve at scale. Adopting some basic patterns can help us guard our systems from sudden spike in traffic, dependency failures, network issues, slower downstream services and can help us achieve considerable uptime for our systems.',
+      'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems more predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
     speaker: {
       avatar:
         'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
       name: 'Rajeev N Bharshetty',
-      desc: 'Computer science nerd',
+      desc: 'Gojek Computer science nerd',
     },
   },
   {
