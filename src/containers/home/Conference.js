@@ -120,7 +120,7 @@ const events = [
       avatar:
         'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
       name: 'Rajeev N Bharshetty',
-      desc: 'Gojenk Computer science nerd',
+      desc: 'Gojek Computer science nerd',
     },
   },
   {
