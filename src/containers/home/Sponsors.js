@@ -12,6 +12,10 @@ const rows = [
         href: 'https://trustingsocial.com/',
         image: 'trustingsocial',
       },
+      {
+        href: 'https://www.chotot.com/',
+        image: 'chotot',
+      },
     ],
   },
   {

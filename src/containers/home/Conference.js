@@ -32,14 +32,14 @@ const events = [
   {
     highlighted: false,
     time: '10:30',
-    title: 'Building Resilient Data Pipelines in Go',
+    title: 'Go on a journey away from the mammoth C/C++ monolith.',
     desc:
-      'The modern world runs on Data. In this talk we will cover how Gophers of any level can easily build Data Pipelines in Go with Kafka and Cassandra. At the end, we will look at how GE has written a Data Pipeline in Go that can handle over 800,000 writes per second of industrial time series data.',
+      'There is no rocket science or big fancy voila neat trick on Golang here. This would just be our actual journey, from some home cooked C extension mod for Apache httpd and our own templating engine to a grand shift toward Golang, what we have done, how did we go-on, what we have not done',
     speaker: {
       avatar:
-        'https://secure.gravatar.com/avatar/f982183e1db9eed435f2097d10281f7c?s=500',
-      name: 'Grant Griffiths',
-      desc: 'Senior software engineer',
+        'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/38506/Profile_photo.png',
+      name: 'Kelvin Vuong',
+      desc: 'CTO at Chotot.com',
     },
   },
   {
