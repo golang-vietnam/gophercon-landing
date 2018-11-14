@@ -19,7 +19,7 @@ const HeroBannerSection = () => (
           </div>
 
           <p className="text-xl text-white font-semibold mt-2 mb-10">
-            December 2018
+            8 December 2018
           </p>
           <div className="flex flex-wrap justify-center">
             <a
