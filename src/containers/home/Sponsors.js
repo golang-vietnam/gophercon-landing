@@ -25,6 +25,10 @@ const rows = [
         href: 'https://dwarves.foundation',
         image: 'dwarves',
       },
+      {
+        href: 'https://global.axon.com/',
+        image: 'axon',
+      },
     ],
   },
   {
