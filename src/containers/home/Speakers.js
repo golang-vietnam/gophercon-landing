@@ -12,16 +12,16 @@ const speakers = [
       'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/35028/TRIODOS_STM_RGB_7414_closeup.jpg',
   },
   {
-    name: 'Grant Griffiths',
+    name: 'Kelvin Vuong',
     info: (
       <p>
-        Senior software engineer
+        CTO
         <br />
-        at GE Digital
+        at Chotot.com
       </p>
     ),
     avatar:
-      'https://secure.gravatar.com/avatar/f982183e1db9eed435f2097d10281f7c?s=500',
+      'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/38506/Profile_photo.png',
   },
   {
     name: 'Viet Tran',
