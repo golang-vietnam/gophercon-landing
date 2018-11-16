@@ -38,7 +38,7 @@ const events = [
     speaker: {
       avatar:
         'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/38506/Profile_photo.png',
-      name: 'Kelvin Nguyen',
+      name: 'Kelvin Vuong',
       desc: 'CTO at Chotot.com',
     },
   },
