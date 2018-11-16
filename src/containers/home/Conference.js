@@ -139,7 +139,7 @@ const ConferenceSection = () => (
       <div className="row flex items-center flex-wrap">
         <div className="col w-full">
           <h2 className="text-primary text-3xl text-center mb-16">
-            Conference
+            8 Dec - Conference
           </h2>
 
           <div className="timeline">

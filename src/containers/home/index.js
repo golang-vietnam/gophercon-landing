@@ -14,8 +14,8 @@ const Home = () => (
     <HeroBanner />
     <Speakers />
     <Sponsors />
-    <Workshop />
     <Conference />
+    <Workshop />
     <Venue />
   </DefaultLayout>
 )
