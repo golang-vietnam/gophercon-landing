@@ -26,7 +26,7 @@ const events = [
       avatar:
         'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/35028/TRIODOS_STM_RGB_7414_closeup.jpg',
       name: 'Stefan Meissner',
-      desc: 'Backend developer',
+      desc: 'Backend developer at TUI',
     },
   },
   {
@@ -93,16 +93,20 @@ const events = [
     speaker: {
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uirzjki7c_Screen%20Shot%202018-11-10%20at%204.58.34%20PM.png',
-      name: 'Gaurav Agarwal',
-      desc: 'Senior software engineer',
+      name: (
+        <a href="https://twitter.com/algogrit" target="_blank">
+          Gaurav Agarwal
+        </a>
+      ),
+      desc: 'Indie Software Engineer',
     },
   },
   {
     highlighted: false,
     time: '15:00',
-    title: 'Products Insights & Experimentation Platform',
+    title: 'Large Scale Data Capture & Experimentation Platform at Grab',
     desc:
-      "TBD",
+      "Come to learn how we built a system to experiment and rollout features across hundreds of microservices at Grab. The talk is also inclusive of a high-performance event tracking system which captures hundreds of thousands of events per second from mobile apps and backend services and makes them easily queryable through SQL.",
     speaker: {
       avatar:
         'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',

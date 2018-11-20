@@ -5,7 +5,7 @@ const speakers = [
     name: 'Stefan Meissner',
     info: (
       <p>
-        Backend developer <br /> focusing on cloud architecture
+        Backend developer <br /> focusing on cloud architecture at TUI
       </p>
     ),
     avatar:
@@ -63,9 +63,9 @@ const speakers = [
     name: 'Gaurav Agarwal',
     info: (
       <p>
-        Software Practitioner
-        <br />
-        Organizer for Chennai Gopher Community
+        Indie Software Engineer
+        <br/>
+        and Trainer
       </p>
     ),
     avatar:
@@ -75,7 +75,7 @@ const speakers = [
     name: 'Rajeev N Bharshetty',
     info: (
       <p>
-        Computer science nerd
+        Product Engineer at GO-JEK
         <br />
         Working on building reliability at scale on 300+ Micro-services at
         GO-JEK.
