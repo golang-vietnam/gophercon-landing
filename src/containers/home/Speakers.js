@@ -75,7 +75,7 @@ const speakers = [
     name: 'Rajeev N Bharshetty',
     info: (
       <p>
-        Computer science nerd
+        Product Engineer at GO-JEK
         <br />
         Working on building reliability at scale on 300+ Micro-services at
         GO-JEK.
