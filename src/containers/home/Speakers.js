@@ -5,7 +5,7 @@ const speakers = [
     name: 'Stefan Meissner',
     info: (
       <p>
-        Backend developer <br /> focusing on cloud architecture
+        Backend developer <br /> focusing on cloud architecture at TUI
       </p>
     ),
     avatar:

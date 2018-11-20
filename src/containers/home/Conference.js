@@ -26,7 +26,7 @@ const events = [
       avatar:
         'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/35028/TRIODOS_STM_RGB_7414_closeup.jpg',
       name: 'Stefan Meissner',
-      desc: 'Backend developer',
+      desc: 'Backend developer at TUI',
     },
   },
   {
