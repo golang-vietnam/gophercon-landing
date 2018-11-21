@@ -93,8 +93,12 @@ const events = [
     speaker: {
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uirzjki7c_Screen%20Shot%202018-11-10%20at%204.58.34%20PM.png',
-      name: 'Gaurav Agarwal',
-      desc: 'Senior software engineer',
+      name: (
+        <a href="https://twitter.com/algogrit" target="_blank">
+          Gaurav Agarwal
+        </a>
+      ),
+      desc: 'Indie Software Engineer',
     },
   },
   {

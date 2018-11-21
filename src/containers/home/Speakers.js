@@ -63,9 +63,9 @@ const speakers = [
     name: 'Gaurav Agarwal',
     info: (
       <p>
-        Software Practitioner
-        <br />
-        Organizer for Chennai Gopher Community
+        Indie Software Engineer
+        <br/>
+        and Trainer
       </p>
     ),
     avatar:
