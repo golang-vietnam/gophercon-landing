@@ -34,6 +34,10 @@ const rows = [
   {
     name: 'Silver',
     sponsors: [
+        {
+        href: 'https://missmp.eu/',
+        image: 'missmoney',
+      },
           ],
   },
   {
