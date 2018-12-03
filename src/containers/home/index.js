@@ -15,8 +15,8 @@ const Home = () => (
     <Speakers />
     <Sponsors />
     <Conference />
-    <Workshop />
     <Venue />
+    <Workshop />
   </DefaultLayout>
 )
 

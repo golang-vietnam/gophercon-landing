@@ -5,7 +5,9 @@ const WorkshopSection = () => (
     <div className="container pb-8r">
       <div className="row flex items-center flex-wrap">
         <div className="col w-full">
-          <h2 className="text-3xl text-center mb-16 text-white">9 Dec - Workshop</h2>
+          <h2 className="text-3xl text-center mb-16 text-white">
+            9 Dec - Workshop
+          </h2>
 
           <div className="timeline text-white">
             <div className="row flex">
@@ -91,9 +93,9 @@ const WorkshopSection = () => (
             />
             <h4 className="text-white text-xl mt-6 mb-4">Golang Vietnam</h4>
             <p className="text-white">
-              The member from our community who worked with Go for years
-               will walk you through those topics with hand-ons experience.
-               Prepare yourself laptop with laptop and golang installed on it.
+              The member from our community who worked with Go for years will
+              walk you through those topics with hand-ons experience. Prepare
+              yourself laptop with laptop and golang installed on it.
             </p>
           </div>
 
@@ -102,12 +104,9 @@ const WorkshopSection = () => (
               The workshop will be held at:
             </h6>
 
-            <h4 className="text-white text-2xl font-medium">
-              CoderSchool
-            </h4>
+            <h4 className="text-white text-2xl font-medium">CoderSchool</h4>
             <h4 className="text-white text-xl font-medium mb-14">
-              Copac Square Building 12 Ton Dan, D4, Ho Chi
-              Minh City
+              Copac Square Building 12 Ton Dan, D4, Ho Chi Minh City
             </h4>
 
             <div className="workshop-map">

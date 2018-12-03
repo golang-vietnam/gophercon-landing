@@ -56,15 +56,14 @@ const speakers = [
         at Grab
       </p>
     ),
-    avatar:
-      'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
+    avatar: 'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
   },
   {
     name: 'Gaurav Agarwal',
     info: (
       <p>
         Indie Software Engineer
-        <br/>
+        <br />
         and Trainer
       </p>
     ),

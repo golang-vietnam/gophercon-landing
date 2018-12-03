@@ -47,7 +47,7 @@ const events = [
     time: '11:00',
     title: 'Golang and infrastructure works',
     desc:
-      "How we use Go to enable a fast pace development and deployment pipeline",
+      'How we use Go to enable a fast pace development and deployment pipeline',
     speaker: {
       avatar:
         'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
@@ -76,7 +76,8 @@ const events = [
   {
     highlighted: false,
     time: '13:45',
-    title: 'How Sendo.vn build a scalable architecture to grow 10X every year with Golang',
+    title:
+      'How Sendo.vn build a scalable architecture to grow 10X every year with Golang',
     speaker: {
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/e6f4b652er_viettran_speaker.jpg',
@@ -87,14 +88,19 @@ const events = [
   {
     highlighted: false,
     time: '14:30',
-    title: `An investigative walk through of Go's channels `,
+    title: `An investigative walk through of Go's channels`,
     desc:
-      "This talk deeps dive into the inner workings of Go’s channels using an interactive debugger to understand it’s strengths and shortcomings. ",
+      'This talk deeps dive into the inner workings of Go’s channels using an interactive debugger to understand it’s strengths and shortcomings. ',
     speaker: {
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uirzjki7c_Screen%20Shot%202018-11-10%20at%204.58.34%20PM.png',
       name: (
-        <a href="https://twitter.com/algogrit" target="_blank">
+        <a
+          className="text-black"
+          href="https://twitter.com/algogrit"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Gaurav Agarwal
         </a>
       ),
@@ -106,10 +112,9 @@ const events = [
     time: '15:00',
     title: 'Large Scale Data Capture & Experimentation Platform at Grab',
     desc:
-      "Come to learn how we built a system to experiment and rollout features across hundreds of microservices at Grab. The talk is also inclusive of a high-performance event tracking system which captures hundreds of thousands of events per second from mobile apps and backend services and makes them easily queryable through SQL.",
+      'Come to learn how we built a system to experiment and rollout features across hundreds of microservices at Grab. The talk is also inclusive of a high-performance event tracking system which captures hundreds of thousands of events per second from mobile apps and backend services and makes them easily queryable through SQL.',
     speaker: {
-      avatar:
-        'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
+      avatar: 'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
       name: 'Roman Atachiants',
       desc: 'Grab head of engineer',
     },
