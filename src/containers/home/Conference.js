@@ -26,7 +26,7 @@ const events = [
       avatar:
         'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/35028/TRIODOS_STM_RGB_7414_closeup.jpg',
       name: 'Stefan Meissner',
-      desc: 'Backend developer at TUI',
+      desc: 'Backend Developer @ TUI',
     },
   },
   {
@@ -39,20 +39,20 @@ const events = [
       avatar:
         'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/38506/Profile_photo.png',
       name: 'Kelvin Vuong',
-      desc: 'CTO at Chotot.com',
+      desc: 'CTO @ Chotot',
     },
   },
   {
     highlighted: false,
     time: '11:00',
-    title: 'Golang and infrastructure works',
+    title: 'Golang and infrastructure works.',
     desc:
-      'How we use Go to enable a fast pace development and deployment pipeline',
+      'How we use Go to enable a fast pace development and deployment pipeline.',
     speaker: {
       avatar:
         'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
       name: 'Tam Nguyen',
-      desc: 'Senior software engineer',
+      desc: 'Software & DevOps Engineer @ Anduin Transactions',
     },
   },
   {
@@ -63,14 +63,14 @@ const events = [
   {
     highlighted: false,
     time: '13:00',
-    title: 'Anatomy of a Docker container',
+    title: 'Anatomy of a Docker container.',
     desc:
       "What are Containers and How is Docker made? It's a bunch of namespaces and cgroups put together to build the process isolations that we see. What are namespaces and how do they operate? The talk invokes one Linux namespace at a time, as system calls from a Golang code, up to a full-fledged container",
     speaker: {
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uxdute0wr_Screen%20Shot%202018-11-10%20at%203.04.26%20PM.png',
       name: 'Piyush Verma',
-      desc: 'Director of Engineer',
+      desc: 'Director of Engineering @ Trusting Social',
     },
   },
   {
@@ -82,13 +82,13 @@ const events = [
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/e6f4b652er_viettran_speaker.jpg',
       name: 'Viet Tran',
-      desc: 'Solution architect',
+      desc: 'Solution Architect @ Sendo',
     },
   },
   {
     highlighted: false,
     time: '14:30',
-    title: `An investigative walk through of Go's channels`,
+    title: `An investigative walk through of Go channels`,
     desc:
       'This talk deeps dive into the inner workings of Go’s channels using an interactive debugger to understand it’s strengths and shortcomings. ',
     speaker: {
@@ -116,7 +116,7 @@ const events = [
     speaker: {
       avatar: 'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
       name: 'Roman Atachiants',
-      desc: 'Grab head of engineer',
+      desc: 'Head of Engineering @ Grab',
     },
   },
   {
@@ -129,7 +129,7 @@ const events = [
       avatar:
         'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
       name: 'Rajeev N Bharshetty',
-      desc: 'Product Engineer at GO-JEK',
+      desc: 'Product Engineer @ GO-JEK',
     },
   },
   {
@@ -148,7 +148,7 @@ const ConferenceSection = () => (
       <div className="row flex items-center flex-wrap">
         <div className="col w-full">
           <h2 className="text-primary text-3xl text-center mb-16">
-            8 Dec - Conference
+            08 Dec - Conference
           </h2>
 
           <div className="timeline">

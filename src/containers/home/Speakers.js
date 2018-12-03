@@ -5,7 +5,7 @@ const speakers = [
     name: 'Stefan Meissner',
     info: (
       <p>
-        Backend developer <br /> focusing on cloud architecture at TUI
+        Backend Developer at TUI <br /> focusing on cloud architecture
       </p>
     ),
     avatar:
@@ -17,7 +17,7 @@ const speakers = [
       <p>
         CTO
         <br />
-        at Chotot.com
+        at Chotot
       </p>
     ),
     avatar:
@@ -27,9 +27,9 @@ const speakers = [
     name: 'Viet Tran',
     info: (
       <p>
-        Solution architect
+        Solution Architect
         <br />
-        at Sendo.vn
+        at Sendo
       </p>
     ),
     avatar:
@@ -41,7 +41,7 @@ const speakers = [
       <p>
         Software & Devops Engineer
         <br />
-        at Anduin
+        at Anduin Transactions
       </p>
     ),
     avatar:
@@ -51,7 +51,7 @@ const speakers = [
     name: 'Roman Atachiants',
     info: (
       <p>
-        Head of engineering
+        Head of Engineering
         <br />
         at Grab
       </p>
@@ -76,8 +76,7 @@ const speakers = [
       <p>
         Product Engineer at GO-JEK
         <br />
-        Working on building reliability at scale on 300+ Micro-services at
-        GO-JEK.
+         Building reliability at scale on 300+ microservices
       </p>
     ),
     avatar:
@@ -87,7 +86,7 @@ const speakers = [
     name: 'Piyush Verma',
     info: (
       <p>
-        Director of Engineer
+        Director of Engineering
         <br />
         at Trusting Social
       </p>
