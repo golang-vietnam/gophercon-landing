@@ -22,23 +22,31 @@ const rows = [
     name: 'Gold',
     sponsors: [
       {
-        href: 'https://dwarves.foundation',
-        image: 'dwarves',
-      },
-      {
         href: 'https://global.axon.com/',
         image: 'axon',
+      },
+      {
+        href: 'https://www.grab.com/',
+        image: 'grab',
+      },
+      {
+        href: 'https://www.vng.com.vn/',
+        image: 'vng',
       },
     ],
   },
   {
     name: 'Silver',
     sponsors: [
-        {
+      {
+        href: 'https://dwarves.foundation',
+        image: 'dwarves',
+      },
+      {
         href: 'https://missmp.eu/',
         image: 'missmoney',
       },
-          ],
+    ],
   },
   {
     name: 'Supporters',
