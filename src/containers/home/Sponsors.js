@@ -46,6 +46,10 @@ const rows = [
         href: 'https://missmp.eu/',
         image: 'missmoney',
       },
+      {
+        href: 'https://www.mercari.com/',
+        image: 'mercari',
+      },
     ],
   },
   {

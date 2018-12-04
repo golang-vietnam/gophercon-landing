@@ -78,6 +78,8 @@ const events = [
     time: '13:45',
     title:
       'How Sendo.vn build a scalable architecture to grow 10X every year with Golang',
+    desc:
+      'This talk is how Sendo use microservices with gRPC, Protobuf and some architectures to speed up system.',
     speaker: {
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/e6f4b652er_viettran_speaker.jpg',
