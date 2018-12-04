@@ -32,7 +32,7 @@ const events = [
   {
     highlighted: false,
     time: '10:30',
-    title: 'Go on a journey away from the mammoth C/C++ monolith.',
+    title: 'Go on a journey away from the mammoth C/C++ monolith',
     desc:
       'There is no rocket science or big fancy voila neat trick on Golang here. This would just be our actual journey, from some home cooked C extension mod for Apache httpd and our own templating engine to a grand shift toward Golang, what we have done, how did we go-on, what we have not done',
     speaker: {
@@ -45,7 +45,7 @@ const events = [
   {
     highlighted: false,
     time: '11:00',
-    title: 'Golang and infrastructure works.',
+    title: 'Golang and infrastructure works',
     desc:
       'How we use Go to enable a fast pace development and deployment pipeline.',
     speaker: {
@@ -63,7 +63,7 @@ const events = [
   {
     highlighted: false,
     time: '13:00',
-    title: 'Anatomy of a Docker container.',
+    title: 'Anatomy of a Docker container',
     desc:
       "What are Containers and How is Docker made? It's a bunch of namespaces and cgroups put together to build the process isolations that we see. What are namespaces and how do they operate? The talk invokes one Linux namespace at a time, as system calls from a Golang code, up to a full-fledged container",
     speaker: {
@@ -77,7 +77,7 @@ const events = [
     highlighted: false,
     time: '13:45',
     title:
-      'How Sendo.vn build a scalable architecture to grow 10X every year with Golang',
+      'How we build scalable architecture at Sendo',
     desc:
       'This talk is how Sendo use microservices with gRPC, Protobuf and some architectures to speed up system.',
     speaker: {

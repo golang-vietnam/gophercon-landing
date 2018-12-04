@@ -33,7 +33,7 @@ const WorkshopSection = () => (
                   programming language supported by extensive examples and
                   hands-on exercises
                 </p>
-                <h5 className="text-base mb-2">Course online</h5>
+                <h5 className="text-base mb-2">Course outline</h5>
                 <ul className="opacity-75">
                   <li>Language Syntax</li>
                   <li>Using Pointers</li>
@@ -67,6 +67,7 @@ const WorkshopSection = () => (
                   experience with other programming languages and wants to learn
                   Go.
                 </p>
+                <h5 className="text-base mb-2">Course outline</h5>
                 <ul className="opacity-75">
                   <li>Language Syntax</li>
                   <li>Data Structures</li>
