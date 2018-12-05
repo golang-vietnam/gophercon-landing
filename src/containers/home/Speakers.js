@@ -76,7 +76,7 @@ const speakers = [
       <p>
         Product Engineer at GO-JEK
         <br />
-         Building reliability at scale on 300+ microservices
+        Building reliability at scale on 300+ microservices
       </p>
     ),
     avatar:
@@ -98,8 +98,8 @@ const speakers = [
 
 const SpeakersSection = () => (
   <section id="speakers" className="text-center">
-    <div className="pt-40 pb-20 bg-primary" />
-    <div className="triangle" />
+    {/* <div className="pt-40 pb-20 bg-primary" /> */}
+    {/* <div className="triangle" /> */}
     <div className="speakers container">
       <div className="row flex flex-wrap justify-center">
         <div className="col w-full bg-white py-18 px-24 shadow wrapper">

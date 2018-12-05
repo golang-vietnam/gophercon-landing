@@ -8,6 +8,10 @@ const links = [
     to: '#hero',
   },
   {
+    name: 'Conference',
+    to: '#conference',
+  },
+  {
     name: 'Speakers',
     to: '#speakers',
   },
@@ -18,10 +22,6 @@ const links = [
   {
     name: 'Workshop',
     to: '#workshop',
-  },
-  {
-    name: 'Conference',
-    to: '#conference',
   },
 ]
 

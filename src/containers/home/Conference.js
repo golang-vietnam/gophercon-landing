@@ -4,7 +4,7 @@ const events = [
   {
     highlighted: false,
     time: '08:00',
-    title: 'Registration',
+    title: 'Check-in',
   },
   {
     highlighted: false,
@@ -14,7 +14,15 @@ const events = [
   {
     highlighted: true,
     time: '09:00',
-    title: 'Opening Keynote',
+    title: 'Opening - 9 Years of Go',
+    desc: 'An opening keynote, quick brief through timeline of Go over 9 years. Welcome to GopherCon Vietnam 2018.',
+    speaker: {
+      avatar:
+        'https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-9/15541993_10208099369785034_6498331180862958572_n.jpg?_nc_cat=103&_nc_ht=scontent.fsgn5-7.fna&oh=04dbcff49176634d78d38c88a9370c91&oe=5CB146F3',
+      name: 'Vu Nguyen',
+      desc: 'Member @ Golang Vietnam',
+    },
+    link: 'https://ask.gophercon.vn/event/FEDN',
   },
   {
     highlighted: false,
@@ -28,6 +36,7 @@ const events = [
       name: 'Stefan Meissner',
       desc: 'Backend Developer @ TUI',
     },
+    link: 'https://ask.gophercon.vn/event/VGAF',
   },
   {
     highlighted: false,
@@ -76,8 +85,7 @@ const events = [
   {
     highlighted: false,
     time: '13:45',
-    title:
-      'How we build scalable architecture at Sendo',
+    title: 'How we build scalable architecture at Sendo',
     desc:
       'This talk is how Sendo use microservices with gRPC, Protobuf and some architectures to speed up system.',
     speaker: {
@@ -126,7 +134,7 @@ const events = [
     time: '15:45',
     title: 'Production Ready Microservices at Scale',
     desc:
-      'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems more predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
+      'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems 6 predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
     speaker: {
       avatar:
         'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
@@ -144,7 +152,7 @@ const events = [
 const ConferenceSection = () => (
   <section
     id="conference"
-    className="bg-grey-lightest sm:pt-24 pt-10 sm:pb-40 pb-32"
+    className="bg-grey-lightest sm:pt-32 pt-18 sm:pb-40 pb-32"
   >
     <div className="container pb-8r">
       <div className="row flex items-center flex-wrap">
@@ -155,7 +163,7 @@ const ConferenceSection = () => (
 
           <div className="timeline">
             {events.map(
-              ({ highlighted, time, title, desc, speaker }, index) => (
+              ({ highlighted, time, title, desc, speaker, link }, index) => (
                 <div className="row flex" key={time}>
                   <div className="col timeline__time flex flex-col items-center">
                     <span
@@ -183,15 +191,27 @@ const ConferenceSection = () => (
                     </h4>
                     {desc && <p>{desc}</p>}
                     {speaker && (
-                      <div className="flex items-center mt-4">
-                        <div
-                          className="timeline__avatar"
-                          style={{ backgroundImage: `url(${speaker.avatar})` }}
-                        />
-                        <div className="pl-4">
-                          <h6 className="text-base">{speaker.name}</h6>
-                          <div className="font-normal">{speaker.desc}</div>
+                      <div className="flex sm:flex-row flex-column flex-wrap items-center justify-between">
+                        <div className="flex items-center mt-4">
+                          <div
+                            className="timeline__avatar"
+                            style={{
+                              backgroundImage: `url(${speaker.avatar})`,
+                            }}
+                          />
+                          <div className="pl-4">
+                            <h6 className="text-base">{speaker.name}</h6>
+                            <div className="font-normal">{speaker.desc}</div>
+                          </div>
                         </div>
+                        {link && (
+                          <a
+                            className="font-medium px-5 py-3 leading-none text-white bg-primary inline-block mt-6"
+                            href={link}
+                          >
+                            Ask question
+                          </a>
+                        )}
                       </div>
                     )}
                   </div>

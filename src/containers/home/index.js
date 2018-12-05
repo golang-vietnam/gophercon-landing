@@ -12,9 +12,9 @@ const Home = () => (
   <DefaultLayout>
     <PageHead />
     <HeroBanner />
+    <Conference />
     <Speakers />
     <Sponsors />
-    <Conference />
     <Venue />
     <Workshop />
   </DefaultLayout>

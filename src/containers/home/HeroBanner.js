@@ -17,32 +17,17 @@ const HeroBannerSection = () => (
               alt="GopherConVN-character"
             />
           </div>
-
           <p className="text-xl text-white font-semibold mt-2 mb-10">
             08 - 09 December 2018
           </p>
-          <div className="flex flex-wrap justify-center items-center mt-4">
-            <a
-              className="font-medium mx-3 px-5 py-2 sm:mt-0 text-primary bg-white inline-block"
-              href="https://www.papercall.io/gopherconvn2018"
-            >
-              Become speaker
-            </a>
-            <a
-              className="font-medium mx-3 px-5 py-2 text-primary bg-white inline-block"
-              href="https://www.facebook.com/events/1859869227438912/"
-            >
-              Buy a ticket
-            </a>
-          </div>
         </div>
 
         <div className="w-full text-center absolute pin-x pin-b pb-6">
-          <ScrollTo target="#speakers">
+          <ScrollTo target="#conference">
             {handleClick => (
               <a
                 className="text-white font-semibold"
-                href="#speakers"
+                href="#conference"
                 onClick={handleClick}
               >
                 Learn more <br /> <DownArrow />
