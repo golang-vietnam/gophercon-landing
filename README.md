@@ -1,3 +1,5 @@
+![](public/images/website.png)
+
 # GopherCon Landing Page
 
 This is the official repo for Gopher Conference website.
