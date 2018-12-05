@@ -47,7 +47,7 @@ const rows = [
         image: 'missmoney',
       },
       {
-        href: 'https://www.mercari.com/',
+        href: 'https://www.mercari.com/jp/',
         image: 'mercari',
       },
     ],
