@@ -12,7 +12,7 @@ const events = [
     title: 'Welcome',
   },
   {
-    highlighted: true,
+    highlighted: false,
     time: '09:00',
     title: 'Opening - 9 Years of Go',
     desc: 'An opening keynote, quick brief through timeline of Go over 9 years. Welcome to GopherCon Vietnam 2018.',
@@ -50,28 +50,11 @@ const events = [
       name: 'Kelvin Vuong',
       desc: 'CTO @ Chotot',
     },
+    link: 'https://ask.gophercon.vn/event/RDKD',
   },
   {
     highlighted: false,
     time: '11:00',
-    title: 'Golang and infrastructure works',
-    desc:
-      'How we use Go to enable a fast pace development and deployment pipeline.',
-    speaker: {
-      avatar:
-        'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
-      name: 'Tam Nguyen',
-      desc: 'Software & DevOps Engineer @ Anduin Transactions',
-    },
-  },
-  {
-    highlighted: false,
-    time: '11:30',
-    title: 'Lunch',
-  },
-  {
-    highlighted: false,
-    time: '13:00',
     title: 'Anatomy of a Docker container',
     desc:
       "What are Containers and How is Docker made? It's a bunch of namespaces and cgroups put together to build the process isolations that we see. What are namespaces and how do they operate? The talk invokes one Linux namespace at a time, as system calls from a Golang code, up to a full-fledged container",
@@ -81,6 +64,26 @@ const events = [
       name: 'Piyush Verma',
       desc: 'Director of Engineering @ Trusting Social',
     },
+    link: 'https://ask.gophercon.vn/event/KIRP',
+  },
+  {
+    highlighted: false,
+    time: '11:45',
+    title: 'Lunch',
+  },
+  {
+    highlighted: false,
+    time: '13:00',
+    title: 'Golang and infrastructure works',
+    desc:
+      'How we use Go to enable a fast pace development and deployment pipeline.',
+    speaker: {
+      avatar:
+        'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
+      name: 'Tam Nguyen',
+      desc: 'Software & DevOps Engineer @ Anduin Transactions',
+    },
+    link: 'https://ask.gophercon.vn/event/NXCE',
   },
   {
     highlighted: false,
@@ -94,6 +97,7 @@ const events = [
       name: 'Viet Tran',
       desc: 'Solution Architect @ Sendo',
     },
+    link: 'https://ask.gophercon.vn/event/VIOB',
   },
   {
     highlighted: false,
@@ -116,6 +120,7 @@ const events = [
       ),
       desc: 'Indie Software Engineer',
     },
+    link: 'https://ask.gophercon.vn/event/YOXH',
   },
   {
     highlighted: false,
@@ -128,9 +133,10 @@ const events = [
       name: 'Roman Atachiants',
       desc: 'Head of Engineering @ Grab',
     },
+    link: 'https://ask.gophercon.vn/event/KYMW',
   },
   {
-    highlighted: false,
+    highlighted: true,
     time: '15:45',
     title: 'Production Ready Microservices at Scale',
     desc:
@@ -141,6 +147,7 @@ const events = [
       name: 'Rajeev N Bharshetty',
       desc: 'Product Engineer @ GO-JEK',
     },
+    link: 'https://ask.gophercon.vn/event/GYWJ',
   },
   {
     highlighted: false,
