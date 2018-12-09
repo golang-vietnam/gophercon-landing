@@ -61,7 +61,7 @@ const WorkshopSection = () => (
                 <div className="timeline__line bg-white opacity-50 flex-1" />
               </div>
               <div className="col">
-                <h4 className="text-xl mt-3 mb-4 text-white">Go Immediates</h4>
+                <h4 className="text-xl mt-3 mb-4 text-white">Go Intermediates</h4>
                 <p className="mb-4">
                   This is for any intermediate-level developer who has some
                   experience with other programming languages and wants to learn
