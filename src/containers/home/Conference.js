@@ -57,7 +57,7 @@ const events = [
     time: '11:00',
     title: 'A colorful journey of be from NodeJS to Go',
     desc:
-      "",
+      "A story behind a monolith NodeJS stack goes to 100+ Go microservices",
     speaker: {
       avatar:
         'https://i.imgur.com/w7zzT6s.jpg',
