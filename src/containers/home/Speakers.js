@@ -2,97 +2,97 @@ import React from 'react'
 
 const speakers = [
   {
-    name: 'Stefan Meissner',
+    name: 'Sau Sheong Chang',
     info: (
       <p>
-        Backend Developer at TUI <br /> focusing on cloud architecture
+        CEO Singapore Power Digital, founder GopherCon Singapore
       </p>
     ),
     avatar:
-      'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/35028/TRIODOS_STM_RGB_7414_closeup.jpg',
+      'https://media.licdn.com/dms/image/C5103AQEzEldCV1TSIQ/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=4O2RyC1E6yXRiE75H2BxD8LBUBCH3GF_diCU7kGbiyY',
   },
   {
-    name: 'Kelvin Vuong',
+    name: 'Thang Le',
     info: (
       <p>
-        CTO
+        SRE Engineer
         <br />
-        at Chotot
+        at Google Australia
       </p>
     ),
     avatar:
-      'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/38506/Profile_photo.png',
+      'https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.0-1/c269.60.425.425a/1924657_10152281666789761_245561942_n.jpg?_nc_cat=110&_nc_oc=AQlEXTBsAj3QmNSw5TfMa9__1KIeEdHWlKp17sBGdd4ZO2Etj-DPm_WA945BjeJAo3w&_nc_ht=scontent.fsgn5-3.fna&oh=932d1199b81e5b07a97acc6be518d3fc&oe=5E29FF6A',
   },
   {
-    name: 'Viet Tran',
+    name: 'Yashish Dua',
     info: (
       <p>
-        Solution Architect
+        Platform Engineer
         <br />
-        at Sendo
+        at Postman
       </p>
     ),
     avatar:
-      'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/e6f4b652er_viettran_speaker.jpg',
+      'https://media.licdn.com/dms/image/C5103AQGQAgRJIRimHw/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=6wZhbMHzhl3GliLbuuCntvAvR4NCOkomdHyPfnfmIO8',
   },
   {
-    name: 'Tam Nguyen',
+    name: 'Thach Le',
     info: (
       <p>
-        Software & Devops Engineer
+        Engineer Manager
         <br />
-        at Anduin Transactions
+        at BEGROUP
       </p>
     ),
     avatar:
-      'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
+      'https://i.imgur.com/w7zzT6s.jpg',
   },
   {
-    name: 'Roman Atachiants',
+    name: 'Doni Rubiagatra',
     info: (
       <p>
-        Head of Engineering
+        Software Engineer at kumparan
+        <br />
+        Cofounder Golang Surabya
+      </p>
+    ),
+    avatar: 'https://media.licdn.com/dms/image/C5603AQHE52dBt6aMQg/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=fLYg1Yl3LOB1RU7OKrBml-ymOt-4eIEKnej856r7MPM',
+  },
+  {
+    name: 'Ken Shaw',
+    info: (
+      <p>
+        CTO 
+        <br />
+        Brank.as
+      </p>
+    ),
+    avatar:
+      'https://media.licdn.com/dms/image/C5603AQEyhtpT6Gb2lg/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=6iHDm1mqwV4uF6JsKOJx-S4WEnrcNNraInjKSADmnN8',
+  },
+  {
+    name: 'Aditya Mukerjee',
+    info: (
+      <p>
+        Software Engineer 
+        <br />
+        at Stripe
+      </p>
+    ),
+    avatar:
+      'https://media.licdn.com/dms/image/C4D03AQF2t2pUB7VIFA/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=zj2hM7Aa7kn0po57c8UpL4il4ncW473Llim2TvmEMs0',
+  },
+  {
+    name: 'Thanh Nguyen',
+    info: (
+      <p>
+        Software Engineer
         <br />
         at Grab
       </p>
     ),
-    avatar: 'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
-  },
-  {
-    name: 'Gaurav Agarwal',
-    info: (
-      <p>
-        Indie Software Engineer
-        <br />
-        and Trainer
-      </p>
-    ),
     avatar:
-      'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uirzjki7c_Screen%20Shot%202018-11-10%20at%204.58.34%20PM.png',
-  },
-  {
-    name: 'Rajeev N Bharshetty',
-    info: (
-      <p>
-        Product Engineer at GO-JEK
-        <br />
-        Building reliability at scale on 300+ microservices
-      </p>
-    ),
-    avatar:
-      'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
-  },
-  {
-    name: 'Piyush Verma',
-    info: (
-      <p>
-        Director of Engineering
-        <br />
-        at Trusting Social
-      </p>
-    ),
-    avatar:
-      'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uxdute0wr_Screen%20Shot%202018-11-10%20at%203.04.26%20PM.png',
+      'https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-1/50655434_1967490259964988_7169114008383913984_o.jpg?_nc_cat=103&_nc_oc=AQldMVbt1jIipW1PXSg2qbwtmxKPpoKvNnrpb7-AuQ6TL5HTp_A9sz7BpEFT5Ci0n80&_nc_ht=scontent.fsgn5-7.fna&oh=a934303008bbf151e3f92594acaab4a6&oe=5E2B6863',
   },
 ]
 
@@ -122,14 +122,14 @@ const SpeakersSection = () => (
               </div>
             ))}
           </div>
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <a
               className="font-medium mx-3 px-5 py-2 text-white bg-primary inline-block"
               href="#"
             >
               Become a speaker
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

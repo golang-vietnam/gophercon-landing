@@ -6,8 +6,8 @@ import { Head } from 'react-static'
 import { siteRoot } from '@/config'
 
 const PageHead = ({
-  title = 'GopherCon Vietnam 2018',
-  desc = 'GopherCon Vietnam 2018 is the first Golang conference held in Vietnam. Join us and have fun. We believe this GopherCon will help to build a better connection between Vietnam gophers and bring values to the Tech community.',
+  title = 'GopherCon Vietnam 2019',
+  desc = 'GopherCon Vietnam 2019 is the first Golang conference held in Vietnam. Join us and have fun. We believe this GopherCon will help to build a better connection between Vietnam gophers and bring values to the Tech community.',
   path = '',
   ogImagePath = 'gopher-con-og.png',
   twitterImagePath = 'gopher-con-twitter-card.png',

@@ -4,52 +4,52 @@ const rows = [
   {
     name: 'Platinum',
     sponsors: [
-      {
-        href: 'https://www.sendo.vn',
-        image: 'sendo',
-      },
-      {
-        href: 'https://trustingsocial.com/',
-        image: 'trustingsocial',
-      },
-      {
-        href: 'https://www.chotot.com/',
-        image: 'chotot',
-      },
+      // {
+      //   href: 'https://www.be.xyz',
+      //   image: 'be',
+      // },
+      // {
+      //   href: 'https://trustingsocial.com/',
+      //   image: 'trustingsocial',
+      // },
+      // {
+      //   href: 'https://www.chotot.com/',
+      //   image: 'chotot',
+      // },
     ],
   },
   {
     name: 'Gold',
     sponsors: [
-      {
-        href: 'https://global.axon.com/',
-        image: 'axon',
-      },
-      {
-        href: 'https://www.grab.com/',
-        image: 'grab',
-      },
-      {
-        href: 'https://www.vng.com.vn/',
-        image: 'vng',
-      },
+      // {
+      //   href: 'https://global.axon.com/',
+      //   image: 'axon',
+      // },
+      // {
+      //   href: 'https://www.grab.com/',
+      //   image: 'grab',
+      // },
+      // {
+      //   href: 'https://www.vng.com.vn/',
+      //   image: 'vng',
+      // },
     ],
   },
   {
     name: 'Silver',
     sponsors: [
-      {
-        href: 'https://dwarves.foundation',
-        image: 'dwarves',
-      },
-      {
-        href: 'https://missmp.eu/',
-        image: 'missmoney',
-      },
-      {
-        href: 'https://www.mercari.com/jp/',
-        image: 'mercari',
-      },
+      // {
+      //   href: 'https://dwarves.foundation',
+      //   image: 'dwarves',
+      // },
+      // {
+      //   href: 'https://missmp.eu/',
+      //   image: 'missmoney',
+      // },
+      // {
+      //   href: 'https://www.mercari.com/jp/',
+      //   image: 'mercari',
+      // },
     ],
   },
   {

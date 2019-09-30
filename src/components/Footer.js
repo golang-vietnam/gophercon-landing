@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="container">
       <div className="row flex sm:flex-row items-center flex-wrap flex-col flex-col-reverse">
         <div className="col sm:w-1/2">
-          <p className="opacity-50 font-medium">© 2018 Golang Vietnam</p>
+          <p className="opacity-50 font-medium">© 2019 Golang Vietnam</p>
         </div>
         <div className="col sm:w-1/2 sm:mb-0 mb-4 leading-none">
           <a href="https://facebook.com/golang.org.vn" className="flex items-center justify-end ">

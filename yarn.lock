@@ -1047,7 +1047,7 @@
 
 "@webassemblyjs/helper-buffer@1.7.6":
   version "1.7.6"
-  resolved "https://registry.yarnpkg.com/@webassemblyjs/helper-buffer/-/helper-buffer-1.7.6.tgz#ba0648be12bbe560c25c997e175c2018df39ca3e"
+  resolved "https://registry.yarnpkg.com/@webassemblyjs/helper-buffer/-/helper-buffer-1.7.6.tgz#ba0648be12bbe560c25c997e175c2019df39ca3e"
 
 "@webassemblyjs/helper-code-frame@1.7.6":
   version "1.7.6"

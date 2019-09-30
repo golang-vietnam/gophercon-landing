@@ -8,12 +8,13 @@ html {
   --white-50: rgba(255, 255, 255, 0.5);
   --white-25: rgba(255, 255, 255, 0.25);
 
+  --blue: #87CEFA;
   --black: #23252c;
   --black-75: rgba(0, 0, 0, 0.75);
   --black-50: rgba(0, 0, 0, 0.5);
   --black-25: rgba(0, 0, 0, 0.25);
 
-  --primary: #3ba2bc;
+  --primary: #ffbb00;
   --error: #d0021b;
 
   --grey-lightest: #f8f8f8;

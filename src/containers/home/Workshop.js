@@ -1,12 +1,12 @@
 import React from 'react'
 
 const WorkshopSection = () => (
-  <section id="workshop" className="bg-primary sm:pt-24 pt-10 sm:pb-32 pb-24">
+  <section id="workshop" className="bg-blue sm:pt-24 pt-10 sm:pb-32 pb-24">
     <div className="container pb-8r">
       <div className="row flex items-center flex-wrap">
         <div className="col w-full">
           <h2 className="text-3xl text-center mb-16 text-white">
-            09 Dec - Workshop
+            03 Nov - Workshop
           </h2>
 
           <div className="timeline text-white">

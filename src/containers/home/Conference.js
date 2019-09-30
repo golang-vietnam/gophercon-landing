@@ -14,57 +14,57 @@ const events = [
   {
     highlighted: false,
     time: '09:00',
-    title: 'Opening - 9 Years of Go',
-    desc: 'An opening keynote, quick brief through timeline of Go over 9 years. Welcome to GopherCon Vietnam 2018.',
+    title: 'Opening Keynote',
+    desc: 'End the wars with Tanuki - Multiple programming languages in single web application.',
     speaker: {
       avatar:
-        'https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-9/15541993_10208099369785034_6498331180862958572_n.jpg?_nc_cat=103&_nc_ht=scontent.fsgn5-7.fna&oh=04dbcff49176634d78d38c88a9370c91&oe=5CB146F3',
-      name: 'Vu Nguyen',
-      desc: 'Member @ Golang Vietnam',
+        'https://media.licdn.com/dms/image/C5103AQEzEldCV1TSIQ/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=4O2RyC1E6yXRiE75H2BxD8LBUBCH3GF_diCU7kGbiyY',
+      name: 'Sau Sheong Chang',
+      desc: 'CEO Singapore Power Digital, founder GopherCon Singapore',
     },
-    link: 'https://ask.gophercon.vn/event/FEDN',
+    // link: 'https://ask.gophercon.vn/event/FEDN',
   },
   {
     highlighted: false,
     time: '09:45',
-    title: 'Starting Serverless with Go',
+    title: 'An Introduction to SRE at Google (with DevOps Focus)',
     desc:
-      'Serverless – so hot right now. All the big players of cloud platforms have launched some kind of runtime to execute code. By focusing on coding business logic this leads to short production-ready developments. This talk aims to show why Go is a good choice to start with serverless.',
+      'You may have heard about SRE - Site Reliability Engineering. But what is it actually? How is it related to DevOps and beneficial to Gopher community? My talk - An Introduction to SRE at Google (with DevOps Focus) will reveal the mystery about SRE world.',
     speaker: {
       avatar:
-        'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/35028/TRIODOS_STM_RGB_7414_closeup.jpg',
-      name: 'Stefan Meissner',
-      desc: 'Backend Developer @ TUI',
+        'https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.0-1/c269.60.425.425a/1924657_10152281666789761_245561942_n.jpg?_nc_cat=110&_nc_oc=AQlEXTBsAj3QmNSw5TfMa9__1KIeEdHWlKp17sBGdd4ZO2Etj-DPm_WA945BjeJAo3w&_nc_ht=scontent.fsgn5-3.fna&oh=932d1199b81e5b07a97acc6be518d3fc&oe=5E29FF6A',
+      name: 'Thang Le',
+      desc: 'SRE Engineer at Google',
     },
-    link: 'https://ask.gophercon.vn/event/VGAF',
+    // link: 'https://ask.gophercon.vn/event/VGAF',
   },
   {
     highlighted: false,
     time: '10:30',
-    title: 'Go on a journey away from the mammoth C/C++ monolith',
+    title: 'Flowing with Go Context',
     desc:
-      'There is no rocket science or big fancy voila neat trick on Golang here. This would just be our actual journey, from some home cooked C extension mod for Apache httpd and our own templating engine to a grand shift toward Golang, what we have done, how did we go-on, what we have not done',
+      'In this session, we will observe how a flowing context can help you optimize the resource usage of your server and enables context-based programming. We will dive deeper into how context package works and why it is present in the Go as a native package at first place. We will see different use cases of Context package and the do’s and don’ts being followed among the Gophers.',
     speaker: {
       avatar:
-        'https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/38506/Profile_photo.png',
-      name: 'Kelvin Vuong',
-      desc: 'CTO @ Chotot',
+        'https://media.licdn.com/dms/image/C5103AQGQAgRJIRimHw/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=6wZhbMHzhl3GliLbuuCntvAvR4NCOkomdHyPfnfmIO8',
+      name: 'Yashish Dua',
+      desc: 'Platform Engineer at Postman',
     },
-    link: 'https://ask.gophercon.vn/event/RDKD',
+    // link: 'https://ask.gophercon.vn/event/RDKD',
   },
   {
     highlighted: false,
     time: '11:00',
-    title: 'Anatomy of a Docker container',
+    title: 'A colorful journey of be from NodeJS to Go',
     desc:
-      "What are Containers and How is Docker made? It's a bunch of namespaces and cgroups put together to build the process isolations that we see. What are namespaces and how do they operate? The talk invokes one Linux namespace at a time, as system calls from a Golang code, up to a full-fledged container",
+      "",
     speaker: {
       avatar:
-        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uxdute0wr_Screen%20Shot%202018-11-10%20at%203.04.26%20PM.png',
-      name: 'Piyush Verma',
-      desc: 'Director of Engineering @ Trusting Social',
+        'https://i.imgur.com/w7zzT6s.jpg',
+      name: 'Thach Le',
+      desc: 'Engineer Manager at BEGROUP',
     },
-    link: 'https://ask.gophercon.vn/event/KIRP',
+    // link: 'https://ask.gophercon.vn/event/KIRP',
   },
   {
     highlighted: false,
@@ -74,80 +74,71 @@ const events = [
   {
     highlighted: false,
     time: '13:00',
-    title: 'Golang and infrastructure works',
+    title: 'Introduction to NATS: A high-performance messaging system as a solution for communication between services',
     desc:
-      'How we use Go to enable a fast pace development and deployment pipeline.',
+      'The NATS project has been around since 2010, but it has become more popular in recent years due to how well it fits into the paradigm of cloud-native applications, and microservices architectures. This talk will introduce NATS using Go and our stories using NATS in production at kumparan.',
     speaker: {
       avatar:
-        'https://pbs.twimg.com/profile_images/972278423975485440/7Ep7AXKb_400x400.jpg',
-      name: 'Tam Nguyen',
-      desc: 'Software & DevOps Engineer @ Anduin Transactions',
+        'https://media.licdn.com/dms/image/C5603AQHE52dBt6aMQg/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=fLYg1Yl3LOB1RU7OKrBml-ymOt-4eIEKnej856r7MPM',
+      name: 'Doni Rubiagatra',
+      desc: 'Software Engineer at kumparan, Cofounder Golang Surabya',
     },
-    link: 'https://ask.gophercon.vn/event/NXCE',
+    // link: 'https://ask.gophercon.vn/event/NXCE',
   },
   {
     highlighted: false,
     time: '13:45',
-    title: 'How we build scalable architecture at Sendo',
+    title: 'How to leverage Gunk - the Go-derived syntax for Protocol Buffers to massively write microservices',
     desc:
-      'This talk is how Sendo use microservices with gRPC, Protobuf and some architectures to speed up system.',
+      'Introduce how using Gunk, a modern frontend and syntax for Google’s Protocol Buffers that is instantly familiar and accessible to Go developers. Gunk builds on the venerable Go tooling – including versioning with Go modules, and a Go-derived syntax – to create streamlined, project-based workflows for building REST and gRPC services.',
     speaker: {
       avatar:
-        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/e6f4b652er_viettran_speaker.jpg',
-      name: 'Viet Tran',
-      desc: 'Solution Architect @ Sendo',
+        'https://media.licdn.com/dms/image/C5603AQEyhtpT6Gb2lg/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=6iHDm1mqwV4uF6JsKOJx-S4WEnrcNNraInjKSADmnN8',
+      name: 'Ken Shaw',
+      desc: 'CTO Brank.as',
     },
-    link: 'https://ask.gophercon.vn/event/VIOB',
+    // link: 'https://ask.gophercon.vn/event/VIOB',
   },
   {
     highlighted: false,
     time: '14:30',
-    title: `An investigative walk through of Go channels`,
+    title: `করো: Translating Go to Other (Human) Languages, and Back Again`,
     desc:
-      'This talk deeps dive into the inner workings of Go’s channels using an interactive debugger to understand it’s strengths and shortcomings. ',
+      'This talk shows the necessary steps for translating Go to other languages. It focuses mostly on the technical (compiler + toolchain) aspects, but it also highlights some techniques for localizing aspects like comments, documentation, and support mailing lists. This talk is also an excuse to show off Go’s support for UTF-8, as well as to highlight the unique way that Go handles bytes and strings under the hood. ',
     speaker: {
       avatar:
-        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8uirzjki7c_Screen%20Shot%202018-11-10%20at%204.58.34%20PM.png',
-      name: (
-        <a
-          className="text-black"
-          href="https://twitter.com/algogrit"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Gaurav Agarwal
-        </a>
-      ),
-      desc: 'Indie Software Engineer',
+        'https://media.licdn.com/dms/image/C4D03AQF2t2pUB7VIFA/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=zj2hM7Aa7kn0po57c8UpL4il4ncW473Llim2TvmEMs0',
+      name: 'Aditya Mukerjee',
+      desc: 'Software Engineer at Stripe',
     },
-    link: 'https://ask.gophercon.vn/event/YOXH',
+    // link: 'https://ask.gophercon.vn/event/YOXH',
   },
   {
     highlighted: false,
     time: '15:00',
-    title: 'Large Scale Data Capture & Experimentation Platform at Grab',
+    title: 'Overcoming latency, How we build a Cloud Game service with Go',
     desc:
-      'Come to learn how we built a system to experiment and rollout features across hundreds of microservices at Grab. The talk is also inclusive of a high-performance event tracking system which captures hundreds of thousands of events per second from mobile apps and backend services and makes them easily queryable through SQL.',
+      'CloudGaming is the new buzzword recently with the participation of Google Stadia, Microsoft Xcloud. Behind Cloud Gaming is the art of super-low latency realtime streaming to minimize the gap between input and media. I made an opensource POC of Cloud-Gaming in Golang that was Github 1 top trending.',
     speaker: {
-      avatar: 'https://avatars2.githubusercontent.com/u/583116?s=460&v=4',
-      name: 'Roman Atachiants',
-      desc: 'Head of Engineering @ Grab',
+      avatar: 'https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-1/50655434_1967490259964988_7169114008383913984_o.jpg?_nc_cat=103&_nc_oc=AQldMVbt1jIipW1PXSg2qbwtmxKPpoKvNnrpb7-AuQ6TL5HTp_A9sz7BpEFT5Ci0n80&_nc_ht=scontent.fsgn5-7.fna&oh=a934303008bbf151e3f92594acaab4a6&oe=5E2B6863',
+      name: 'Thanh Nguyen',
+      desc: 'Software Engineer at Grab',
     },
-    link: 'https://ask.gophercon.vn/event/KYMW',
+    // link: 'https://ask.gophercon.vn/event/KYMW',
   },
   {
     highlighted: true,
     time: '15:45',
-    title: 'Production Ready Microservices at Scale',
-    desc:
-      'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems 6 predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
-    speaker: {
-      avatar:
-        'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
-      name: 'Rajeev N Bharshetty',
-      desc: 'Product Engineer @ GO-JEK',
-    },
-    link: 'https://ask.gophercon.vn/event/GYWJ',
+    title: 'Closing talk',
+    // desc:
+    //   'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems 6 predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
+    // speaker: {
+    //   avatar:
+    //     'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
+    //   name: 'Rajeev N Bharshetty',
+    //   desc: 'Product Engineer @ GO-JEK',
+    // },
+    // link: 'https://ask.gophercon.vn/event/GYWJ',
   },
   {
     highlighted: false,
@@ -165,7 +156,7 @@ const ConferenceSection = () => (
       <div className="row flex items-center flex-wrap">
         <div className="col w-full">
           <h2 className="text-primary text-3xl text-center mb-16">
-            08 Dec - Conference
+            02 Nov - Conference
           </h2>
 
           <div className="timeline">
