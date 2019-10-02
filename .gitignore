@@ -21,4 +21,5 @@ yarn-error.log*
 
 .vscode
 
-#report
+#linaria-cache
+.linaria-cache
