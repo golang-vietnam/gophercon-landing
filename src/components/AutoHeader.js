@@ -29,7 +29,7 @@ class AutoHeader extends Component {
         className={[
           'fixed z-30 top-0 left-0 w-screen shadow bg-primary',
           css`
-            height: 68px;
+            height: 90px;
             opacity: 0;
             transform: translateY(-100%);
             transition: transform 200ms ease-in-out, opacity 250ms ease-out;
