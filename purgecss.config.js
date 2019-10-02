@@ -1,5 +1,5 @@
-import glob from 'glob'
-import PurgecssPlugin from 'purgecss-webpack-plugin'
+import path from 'path'
+import glob from 'glob-all'
 import PurgecssWhitelister from 'purgecss-whitelister'
 
 class TailwindExtractor {
@@ -8,9 +8,8 @@ class TailwindExtractor {
   }
 }
 
-export default new PurgecssPlugin({
-  // Specify the locations of any files you want to scan for class names.
-  paths: glob.sync('src/**/*.js'),
+export default {
+  paths: glob.sync(['src/**/*.js']),
   extractors: [
     {
       extractor: TailwindExtractor,
@@ -18,9 +17,9 @@ export default new PurgecssPlugin({
     },
   ],
   whitelist: ['html', 'body'].concat(
-    PurgecssWhitelister(['src/css/nprogress.css'])
+    PurgecssWhitelister([path.join(__dirname, './.linaria-styles/**/*.css')])
   ),
   whitelistPatterns: [
     /^module__.+/, // css modules
   ],
-})
+}

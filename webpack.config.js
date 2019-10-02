@@ -1,31 +1,13 @@
 import path from 'path'
 import autoprefixer from 'autoprefixer'
-import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import ExtractCssChunks from 'extract-css-chunks-webpack-plugin'
 import postcssFlexbugsFixes from 'postcss-flexbugs-fixes'
 import tailwindcss from 'tailwindcss'
-import PurgecssPlugin from './purgecss.config'
-
-const getPostCSSLoader = ({ isDev = true }) => ({
-  loader: 'postcss-loader',
-  options: {
-    // Necessary for external CSS imports to work
-    // https://github.com/facebookincubator/create-react-app/issues/2677
-    ident: 'postcss',
-    sourceMap: isDev,
-    plugins: () => [
-      postcssFlexbugsFixes,
-      autoprefixer({
-        browsers: ['>0.25%', 'not ie 11', 'not op_mini all'],
-        flexbox: 'no-2009',
-      }),
-      tailwindcss(path.resolve(__dirname, './tailwind.js')),
-    ],
-  },
-})
+import PurgeCSSPlugin from 'purgecss-webpack-plugin'
 
 function getLoaderTest({ isCssModules = false, lang = 'css' }) {
   if (isCssModules) {
-    // return /\.module\.css$/
+    // ie. "home.module.css"
     return new RegExp(`\\.module\\.${lang}$`)
   }
   return filePath => {
@@ -41,36 +23,58 @@ function getLoaderTest({ isCssModules = false, lang = 'css' }) {
   }
 }
 
-const isDev = stage => stage === 'dev'
-
 function getCSSLoader({
   stage,
   lang = 'css',
   modules = false,
   loaders: extraLoaders = [],
 }) {
-  const _isDev = isDev(stage)
-  // loaders
   const cssLoader = {
     loader: 'css-loader',
     options: {
-      sourceMap: _isDev,
-      minimize: !_isDev,
       importLoaders: 1,
+      sourceMap: false,
       modules,
       localIdentName: modules
         ? 'module__[local]___[hash:base64:5]'
         : '[hash:base64]',
     },
   }
-  const loaders = [
-    _isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
-    cssLoader,
-    getPostCSSLoader({ isDev: _isDev }),
-    ...extraLoaders,
-  ]
+  const postCSSLoader = {
+    loader: 'postcss-loader',
+    options: {
+      // Necessary for external CSS imports to work
+      // https://github.com/facebookincubator/create-react-app/issues/2677
+      ident: 'postcss',
+      sourceMap: false,
+      plugins: () => [
+        postcssFlexbugsFixes,
+        autoprefixer({
+          flexbox: 'no-2009',
+        }),
+        tailwindcss(path.resolve(__dirname, './tailwind.config.js')),
+      ],
+    },
+  }
+
+  let loaders = [postCSSLoader, ...extraLoaders]
+
+  if (stage === 'dev') {
+    loaders = ['style-loader', cssLoader, ...loaders]
+  } else if (stage === 'node') {
+    loaders = [
+      {
+        ...cssLoader,
+        options: { exportOnlyLocals: true },
+      },
+      ...loaders,
+    ]
+  } else if (stage === 'prod') {
+    loaders = [ExtractCssChunks.loader, cssLoader, ...loaders]
+  }
 
   return {
+    include: path.resolve(__dirname, './'),
     test: getLoaderTest({ isCssModules: modules, lang }),
     use: loaders,
   }
@@ -92,38 +96,100 @@ function getSASSLoader({ stage, modules = false }) {
   })
 }
 
-export default (config, { stage, defaultLoaders = {} }) => {
+export default (config, { stage, defaultLoaders }) => {
   const cssLoader = getCSSLoader({ stage, lang: 'css', modules: false })
   const cssModulesLoader = getCSSLoader({ stage, lang: 'css', modules: true })
   const scssLoader = getSASSLoader({ stage, modules: false })
   const scssModulesLoader = getSASSLoader({ stage, modules: true })
-  const _isDev = isDev(stage)
+
+  defaultLoaders.jsLoader.use.push({
+    loader: 'linaria/loader',
+    options: { sourceMap: false },
+  })
 
   config.module.rules = [
     {
       oneOf: [
         defaultLoaders.jsLoader,
+        defaultLoaders.jsLoaderExt,
         scssLoader,
         scssModulesLoader,
         cssLoader,
         cssModulesLoader,
+        {
+          test: /\.(png|jpe?g)$/,
+          enforce: 'post',
+          resourceQuery: /\?lqip$/,
+          loaders: [
+            {
+              loader: 'lqip-loader',
+              options: {
+                base64: true,
+                palette: false,
+              },
+            },
+          ],
+        },
+        {
+          test: /\.(png|jpe?g)$/,
+          enforce: 'post',
+          resourceQuery: /\?sqip$/,
+          loaders: [
+            {
+              loader: 'sqip-loader',
+              options: {
+                numberOfPrimitives: 20,
+              },
+            },
+          ],
+        },
+        {
+          test: /\.(png|jpe?g)$/,
+          enforce: 'post',
+          resourceQuery: /\?tqip$/,
+          loaders: [
+            {
+              loader: 'image-trace-loader',
+              options: {
+                turdSize: 80,
+              },
+            },
+          ],
+        },
+        {
+          test: /\.svg$/,
+          enforce: 'post',
+          resourceQuery: /\?svgr$/,
+          loaders: [
+            {
+              loader: '@svgr/webpack',
+            },
+          ],
+        },
         defaultLoaders.fileLoader,
-      ].filter(Boolean),
+      ],
     },
   ]
 
-  config.resolve.alias = {
-    ...config.resolve.alias,
-    '@': path.join(process.env.PWD, 'src'),
+  config.plugins.push(
+    new ExtractCssChunks({
+      hot: stage === 'dev',
+      filename: '[name].[chunkHash:8].css',
+      chunkFilename: '[id].[chunkHash:8].css',
+      cssModules: true,
+    })
+  )
+
+  if (stage === 'prod') {
+    config.plugins.push(
+      new PurgeCSSPlugin(require('./purgecss.config').default)
+    )
   }
 
-  config.plugins.push(
-    new MiniCssExtractPlugin({
-      filename: _isDev ? '[name].css' : '[name].[hash:8].css',
-      chunkFilename: _isDev ? '[id].css' : '[id].[hash:8].css',
-    }),
-    PurgecssPlugin
-  )
+  config.resolve.alias = {
+    ...config.resolve.alias,
+    '@': path.join(__dirname, 'src'),
+  }
 
   return config
 }

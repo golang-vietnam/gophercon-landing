@@ -1,0 +1,1 @@
+.ds1vhq4{--circle-size:20px;--line-width:2px;}.ds1vhq4::before{content:'';position:absolute;top:0;left:calc((var(--circle-size) - var(--line-width)) / 2 * -1);width:var(--circle-size);height:var(--circle-size);border-radius:9999px;@apply bg-blue;}.ds1vhq4::after{content:'';position:absolute;top:0;left:0;z-index:-1;width:var(--line-width);height:100%;@apply bg-blue;}

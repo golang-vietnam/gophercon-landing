@@ -1,10 +1,13 @@
+# Vietnam Investment Day 2019
+
 ![](public/images/website.png)
 
 # GopherCon Landing Page
 
 This is the official repo for Gopher Conference website.
 
-It was built using [react-static](https://github.com/nozzle/react-static), a progressive static-site generator for React. The output is a static website hosted in Netlify.
+It was built using [react-static](https://github.com/nozzle), a progressive static-site generator for React. The output is a static website hosted in Netlify.
+The template was built by Dwarves Foudation team (https://github.com/dwarvesf/template-react-static)
 
 ## How to Contribute
 
@@ -37,3 +40,9 @@ Building and deploying the site is done via `yarn`
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Gopher Con website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="#" property="cc:attributionName" rel="cc:attributionURL">Gopher Con</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.<br />
+
+> Vietnam Investment Day 2019 landing page
+
+## License
+
+MIT &copy; Dwarves Foundation

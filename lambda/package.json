@@ -1,0 +1,8 @@
+{
+  "name": "functions",
+  "description": "netlify functions",
+  "private": true,
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1"
+  }
+}

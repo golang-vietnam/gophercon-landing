@@ -1,16 +1,19 @@
-import React from 'react'
-import { Router } from 'react-static'
-import Routes from 'react-static-routes'
+import React, { Suspense } from 'react'
+import { Root, Routes } from 'react-static'
+import PageHead from '@/components/PageHead'
 
 import '@/css/tailwind.scss'
-import '@/utils/loading'
 
 const App = () => (
-  <main className="font-sans font-normal text-black leading-normal">
-    <Router>
-      <Routes />
-    </Router>
-  </main>
+  <Root>
+    <PageHead />
+
+    <main className="font-sans font-normal text-black leading-normal">
+      <Suspense fallback={<div />}>
+        <Routes />
+      </Suspense>
+    </main>
+  </Root>
 )
 
 export default App

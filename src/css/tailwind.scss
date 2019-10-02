@@ -1,66 +1,16 @@
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, you should import this line from it's own file:
- *
- * @import "./tailwind-preflight.css";
- *
- * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
- */
+:root {
+  --gutter: 40px;
+}
 
-@tailwind preflight;
-/**
-  * Here you would add any of your custom component classes; stuff that you'd
-  * want loaded *before* the utilities so that the utilities could still
-  * override them.
-  *
-  * Example:
-  *
-  * .btn { ... }
-  * .form-input { ... }
-  *
-  * Or if using a preprocessor or `postcss-import`:
-  *
-  * @import "components/buttons";
-  * @import "components/forms";
-  */
+@tailwind base;
 
 @tailwind components;
-@import "main.css";
-@import "fonts.css";
+@import './main.css';
+@import '../components/Sponsors/style.css';
 
-@import "./components/Header/style.scss";
-@import "./containers/home/style.scss";
-/**
-  * This injects all of Tailwind's utility classes, generated based on your
-  * config file.
-  *
-  * If using `postcss-import`, you should import this line from it's own file:
-  *
-  * @import "./tailwind-utilities.css";
-  *
-  * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
-  */
-
-@tailwind utilities;
-/**
-  * Here you would add any custom utilities you need that don't come out of the
-  * box with Tailwind.
-  *
-  * Example :
-  *
-  * .bg-pattern-graph-paper { ... }
-  * .skew-45 { ... }
-  *
-  * Or if using a preprocessor or `postcss-import`:
-  *
-  * @import "utilities/background-patterns";
-  * @import "utilities/skew-transforms";
-  */
+body {
+  @apply text-black font-sans font-normal;
+}
 
 @responsive {
   .row {
@@ -73,19 +23,8 @@
   }
 }
 
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
+.translate-y-center {
+  transform: translateY(-50%);
 }
 
-.pin-t-1\/2 {
-  top: 50%;
-}
-
-.pin-l-1\/2 {
-  left: 50%;
-}
-
-body {
-  background-color: var(--grey-lightest);
-}
+@tailwind utilities;
