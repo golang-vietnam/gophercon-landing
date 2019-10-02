@@ -3,7 +3,7 @@ import { css } from 'linaria'
 
 const Contact = ({ ...rest }) => {
   return (
-    <div className={['bg-primary mt-24 pt-24']} {...rest}>
+    <div className={['bg-primary mt-24']} {...rest}>
       <div className={['container py-12 md:py-24']}>
         <div className="text-5xl font-bold text-white mb-16">Venue</div>
         <div className="text-white mb-1">

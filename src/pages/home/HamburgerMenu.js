@@ -55,6 +55,7 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
         className={[
           'hidden',
           css`
+            @apply flex flex-col justify-center items-center;
             min-height: 530px;
           `,
         ]}

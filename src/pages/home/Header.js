@@ -41,8 +41,8 @@ const Header = ({ children, className }) => {
             width: 118px;
             height: 35px;
             @screen md {
-              width: 187px;
-              height: 57px;
+              width: 150px;
+              height: 46px;
             }
           `,
         ]}
