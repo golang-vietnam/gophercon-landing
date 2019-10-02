@@ -14,7 +14,7 @@ const HeroBannerSection = () => (
             <img
               src="/images/GopherConVN-character.png"
               srcSet="/images/GopherConVN-character@2x.png 2x"
-              alt="GopherConVN-character"
+              alt="GopherConVN-mascot-character"
             />
           </div>
           <p className="text-xl text-white font-semibold mt-2 mb-10">
