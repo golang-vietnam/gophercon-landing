@@ -74,7 +74,9 @@ const Header = ({ children, className }) => {
                 href={e.href}
                 className={[
                   'hover:text-blue inline-block flex-auto',
-                  window.location.href.includes(e.href) && 'active',
+                  typeof window !== 'undefined' &&
+                    window.location.href.includes(e.href) &&
+                    'active',
                 ]}
               >
                 {e.name}

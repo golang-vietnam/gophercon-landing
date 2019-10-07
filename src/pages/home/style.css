@@ -38,3 +38,36 @@
 a.active {
   @apply text-blue;
 }
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(62, 53, 138, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(62, 53, 138, 0);
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(-25deg);
+  }
+  10% {
+    transform: rotate(-35deg);
+  }
+  20% {
+    transform: rotate(-12deg);
+  }
+  30% {
+    transform: rotate(-35deg);
+  }
+  40% {
+    transform: rotate(-9deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}

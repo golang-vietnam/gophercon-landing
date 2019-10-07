@@ -46,7 +46,7 @@ const HeroSection = ({ ...rest }) => {
           </div>
           <div className="font-semibold text-2xl text-white flex items-center justify-center md:justify-start">
             <SvgArrow className="mr-4 md:mr-6" />
-            December 1 2018
+            November 2nd
           </div>
         </div>
         <div
