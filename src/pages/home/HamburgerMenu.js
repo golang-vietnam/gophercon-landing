@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { css } from 'linaria'
-import { FaBars, FaTimes } from 'react-icons/fa'
 import LazyImage from '@/components/LazyImage'
 import AnimatedMenuIcon from './AnimatedMenuIcon'
 
 const HamburgerMenu = ({ className, menuItems = [] }) => {
+  const [isActive, setIsActive] = useState(false)
+  const toggleActive = () => {
+    setIsActive(!isActive)
+  }
   const labelRef = React.useRef(null)
   const id = React.useMemo(
     () =>
@@ -15,6 +18,7 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
   )
   const handleClick = () => {
     labelRef.current.click()
+    setIsActive(!isActive)
   }
 
   return (
@@ -65,7 +69,7 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
         ]}
         aria-label="menu"
       >
-        <AnimatedMenuIcon />
+        <AnimatedMenuIcon toggleActive={toggleActive} isActive={isActive} />
       </label>
       <ul className="relative bg-white flex-col justify-center items-center">
         {menuItems.map((e, i) => (

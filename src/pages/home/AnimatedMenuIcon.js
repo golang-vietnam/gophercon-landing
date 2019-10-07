@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
 
-const AnimatedMenuIcon = () => {
-  const [isActive, setIsActive] = useState(false)
-  const toggleActive = () => {
-    setIsActive(!isActive)
-  }
-
+const AnimatedMenuIcon = ({ isActive = false, toggleActive }) => {
   return (
     <div>
       <div
