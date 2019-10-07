@@ -7,7 +7,7 @@ const Contact = ({ ...rest }) => {
       <div className={['container py-12 md:py-24']}>
         <div className="text-5xl font-bold text-white mb-16">Venue</div>
         <div className="text-white mb-1">
-          GopherCon Viet Nam 2018 will be held at:
+          GopherCon Viet Nam 2019 will be held at:
         </div>
         <div className="font-bold text-white mb-12">
           195 Dien Bien Phu Street, Ward 15, Binh Thanh Dist, Ho Chi Minh City

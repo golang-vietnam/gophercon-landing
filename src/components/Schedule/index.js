@@ -66,11 +66,14 @@ const Schedule = ({ ...rest }) => {
       {...rest}
     >
       <div className="md:col text-grey">
-        <div className="md:row font-bold text-3xl md:text-5xl text-primary mb-8 md:mb-16">
+        <div className="md:row font-bold text-3xl md:text-5xl text-primary mb-8 md:mb-16 border-b">
           Schedule
         </div>
         {schedule.map((s, key) => (
-          <div key={key} className="md:row md:flex md:justify-start my-10">
+          <div
+            key={key}
+            className="md:row md:flex md:justify-start py-10 border-b"
+          >
             <div className="text-2xl md:text-4xl font-bold md:w-1/4">
               {s.time}
             </div>

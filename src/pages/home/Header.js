@@ -27,7 +27,7 @@ const Header = ({ children, className }) => {
     <header
       className={[
         className,
-        'container text-right flex justify-between items-center text-white focus:text-b;ue',
+        'container text-right flex justify-between items-center text-white focus:text-blue',
         css`
           height: 68px;
         `,
@@ -78,7 +78,7 @@ const Header = ({ children, className }) => {
         </ul>
       </nav>
 
-      <HamburgerMenu className="h-full" menuItems={menu} />
+      <HamburgerMenu menuItems={menu} />
     </header>
   )
 }
