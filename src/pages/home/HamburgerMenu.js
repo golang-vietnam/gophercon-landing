@@ -90,8 +90,9 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
           {...require('./images/heroBg.png?sqip')}
           alt="header background"
           className={[
-            'w-full absolute bottom-0',
+            'w-screen absolute bottom-0 object-cover',
             css`
+              height: 95px;
               z-index: 200;
             `,
           ]}
