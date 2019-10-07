@@ -88,7 +88,6 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
           className={[
             'w-full absolute bottom-0',
             css`
-              position: fixed;
               z-index: 200;
             `,
           ]}
