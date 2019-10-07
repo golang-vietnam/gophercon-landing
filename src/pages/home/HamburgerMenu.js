@@ -17,7 +17,7 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
   }
 
   return (
-    <div className={['relative block md:hidden', className]}>
+    <div className={['relative block flex items-center md:hidden', className]}>
       <label
         ref={labelRef}
         tabIndex="0"
@@ -38,10 +38,15 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
         className={[
           'hidden',
           css`
+            &:not(:checked) {
+              & + ul {
+                @apply hidden;
+              }
+            }
             &:checked {
               @apply bg-white;
               & + ul {
-                @apply block w-screen bg-white py-8;
+                @apply flex w-screen bg-white py-8;
                 position: fixed;
                 top: var(--mobile-menu-top);
                 left: 0;
@@ -53,9 +58,8 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
       />
       <ul
         className={[
-          'hidden',
           css`
-            @apply flex flex-col justify-center items-center;
+            @apply flex-col justify-center items-center;
             min-height: 530px;
           `,
         ]}

@@ -101,10 +101,13 @@ const Sponsors = ({ ...rest }) => {
               </h4>
             </div>
             {sponsors.map(({ href, image }) => (
-              <div className="col sm:w-1/3 sm:mx-0 mx-auto mb-8" key={image}>
+              <div
+                className="col border sm:w-1/3 sm:mx-0 mx-auto mb-8"
+                key={image}
+              >
                 <a
                   href={href}
-                  className="shadow block leading-none text-0"
+                  className="block leading-none text-0"
                   target="__blank"
                 >
                   <img

@@ -41,11 +41,11 @@ const HeroSection = ({ ...rest }) => {
         ]}
       >
         <div className="mb-10">
-          <div className="font-bold text-4xl  md:text-6xl text-white text-center md:text-left">
+          <div className="font-bold text-4xl  md:text-6xl text-white text-center md:text-left mb-6">
             Gophercon <br /> Vietnam <span className="text-blue">2019</span>
           </div>
           <div className="font-semibold text-2xl text-white flex items-center justify-center md:justify-start">
-            <SvgArrow className="mr-4 md:mr-10" />
+            <SvgArrow className="mr-4 md:mr-6" />
             December 1 2018
           </div>
         </div>
