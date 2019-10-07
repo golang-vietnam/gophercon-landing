@@ -70,7 +70,10 @@ const Header = ({ children, className }) => {
               key={i}
               className="inline-flex items-center text-base font-semibold px-5"
             >
-              <a href={e.href} className="inline-block flex-auto">
+              <a
+                href={e.href}
+                className="inline-block flex-auto active:text-blue"
+              >
                 {e.name}
               </a>
             </li>

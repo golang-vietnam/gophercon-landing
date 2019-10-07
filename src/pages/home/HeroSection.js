@@ -69,9 +69,13 @@ const HeroSection = ({ ...rest }) => {
               css`
                 width: 240px;
                 height: 226px;
+                margin-bottom: 80px;
                 @screen lg {
                   width: 440px;
                   height: 418px;
+                  margin-bottom: 0px;
+                  position: absolute;
+                  bottom: 150px;
                 }
               `,
             ]}
@@ -82,7 +86,17 @@ const HeroSection = ({ ...rest }) => {
       <LazyImage
         {...require('./images/heroBg.png?sqip')}
         alt="header background"
-        className="w-full absolute z-10 bottom-0"
+        className={[
+          'w-screen absolute z-10 bottom-0',
+          css`
+            height: 95px;
+            object-fit: cover;
+            @screen lg {
+              height: 170px;
+              object-fit: fill;
+            }
+          `,
+        ]}
       />
     </section>
   )
