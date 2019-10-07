@@ -22,8 +22,7 @@ const schedule = [
     speaker: {
       name: 'Christopher Molozian',
       position: 'Erlang for GO developer',
-      // avatar: './images/ava.png',
-      avatar: <LazyImage {...require('./images/ava.png')} />,
+      avatar: './images/ava.png',
     },
     qna: '',
   },
@@ -46,25 +45,17 @@ const schedule = [
     speaker: {
       name: 'Christopher Molozian',
       position: 'Erlang for GO developer',
-      avatar: './images/ava.png',
+      avatar: 'https://avatars1.githubusercontent.com/u/19520278',
     },
     qna: '',
   },
 ]
 const Schedule = ({ ...rest }) => {
+  const isRemoteSrc = path => {
+    return String(path).substr(0, 4) === 'http'
+  }
   return (
-    <div
-      className={[
-        'container',
-        css`
-          @apply my-12;
-          @screen md {
-            @apply my-24;
-          }
-        `,
-      ]}
-      {...rest}
-    >
+    <div className="container my-12 md:my-24" {...rest}>
       <div className="md:col text-grey">
         <div className="md:row font-bold text-3xl md:text-5xl text-primary mb-8 md:mb-16 border-b">
           Schedule
@@ -80,30 +71,37 @@ const Schedule = ({ ...rest }) => {
             <div className="md:w-3/4">
               <div className="text-2xl font-bold">{s.title}</div>
               <div className="text-base">{s.content}</div>
-              {s.speaker.avatar && s.qna && (
+              {s.speaker.avatar && (
                 <div className="flex justify-between">
-                  <div className="flex justify-between items-center">
-                    {/* <LazyImage {...require(`s.speaker.avatar?sqip`)} /> */}
-                    {s.speaker.avatar}
-                    <div className="flex items-center">
+                  <div className="flex justify-between items-center mt-4">
+                    {!isRemoteSrc(s.speaker.avatar) && (
+                      <LazyImage
+                        className="w-16"
+                        {...require(`${s.speaker.avatar}?sqip`)}
+                      />
+                    )}
+                    {isRemoteSrc(s.speaker.avatar) && (
+                      <img
+                        className="w-16 rounded-full"
+                        src={s.speaker.avatar}
+                      />
+                    )}
+                    <div className="flex flex-col ml-4">
                       <div className="font-bold">{s.speaker.name}</div>
                       <div>{s.speaker.position}</div>
                     </div>
                   </div>
-                  <button
-                    className={[
-                      'block md:ml-auto mt-16 text-lg lg:text-2xl font-medium bg-primary px-6 py-3 focus:outline-none',
-                      css`
-                        &:disabled {
-                          opacity: 0.5;
-                        }
-                      `,
-                    ]}
-                    type="submit"
-                    disabled={isSubmitting}
-                  >
-                    Ask question
-                  </button>
+
+                  {false && (
+                    <button
+                      type="submit"
+                      className={[
+                        'block text-white md:ml-auto mt-16 text-lg lg:text-2xl font-medium bg-primary px-6 py-3 focus:outline-none',
+                      ]}
+                    >
+                      Ask question
+                    </button>
+                  )}
                 </div>
               )}
             </div>
