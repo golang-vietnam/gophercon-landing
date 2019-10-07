@@ -34,3 +34,7 @@
   transform: translateY(-8px) rotate(-45deg);
   background-color: black;
 }
+
+a.active {
+  @apply text-blue;
+}

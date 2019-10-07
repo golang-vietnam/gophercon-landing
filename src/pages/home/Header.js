@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { css } from 'linaria'
 import HamburgerMenu from './HamburgerMenu'
 import LazyImage from '@/components/LazyImage'
@@ -72,7 +72,10 @@ const Header = ({ children, className }) => {
             >
               <a
                 href={e.href}
-                className="inline-block flex-auto active:text-blue"
+                className={[
+                  'hover:text-blue inline-block flex-auto',
+                  window.location.href.includes(e.href) && 'active',
+                ]}
               >
                 {e.name}
               </a>
