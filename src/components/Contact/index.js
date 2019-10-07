@@ -5,7 +5,9 @@ const Contact = ({ ...rest }) => {
   return (
     <div className={['bg-primary mt-24']} {...rest}>
       <div className={['container py-12 md:py-24']}>
-        <div className="text-5xl font-bold text-white mb-16">Venue</div>
+        <div className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-0">
+          Venue
+        </div>
         <div className="text-white mb-1">
           GopherCon Viet Nam 2019 will be held at:
         </div>

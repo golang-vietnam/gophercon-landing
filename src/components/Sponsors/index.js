@@ -101,11 +101,14 @@ const Sponsors = ({ ...rest }) => {
               </h4>
             </div>
             {sponsors.map(({ href, image }) => (
-              <div className="col sm:w-1/3 sm:mx-0 mx-auto mb-8" key={image}>
+              <div
+                className="col sm:w-1/3 sm:mx-0 mx-auto mb-8 flex justify-between items-center"
+                key={image}
+              >
                 <a
                   href={href}
                   className={[
-                    'block border leading-none text-0',
+                    'block border',
                     css`
                       &:hover {
                         box-shadow: 15px 15px 30px 0 rgba(210, 210, 210, 0.5);
