@@ -7,6 +7,7 @@
 @tailwind components;
 @import './main.css';
 @import '../components/Sponsors/style.css';
+@import '../pages/home/style.css';
 
 body {
   @apply text-black font-sans font-normal;

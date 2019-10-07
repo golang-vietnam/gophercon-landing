@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { css } from 'linaria'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import LazyImage from '@/components/LazyImage'
+import AnimatedMenuIcon from './AnimatedMenuIcon'
 
 const HamburgerMenu = ({ className, menuItems = [] }) => {
   const labelRef = React.useRef(null)
@@ -18,18 +19,6 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
 
   return (
     <div className={['relative block flex items-center md:hidden', className]}>
-      <label
-        ref={labelRef}
-        tabIndex="0"
-        role="button"
-        htmlFor={id}
-        className={[
-          'h-full inline-flex items-center focus:outline-none select-none',
-        ]}
-        aria-label="menu"
-      >
-        <FaBars className="w-6 h-6" />
-      </label>
       <input
         aria-hidden="true"
         tabIndex="-1"
@@ -39,16 +28,23 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
           'hidden',
           css`
             &:not(:checked) {
-              & + ul {
+              & ~ ul {
                 @apply hidden;
+              }
+              & + label {
+                @apply text-white;
               }
             }
             &:checked {
               @apply bg-white;
-              & + ul {
-                @apply flex w-screen bg-white py-8;
+              & + label {
+                @apply text-black;
+              }
+
+              & ~ ul {
+                @apply flex w-screen h-screen bg-white py-8;
                 position: fixed;
-                top: var(--mobile-menu-top);
+                top: 0;
                 left: 0;
                 z-index: 100;
               }
@@ -56,14 +52,22 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
           `,
         ]}
       />
-      <ul
+      <label
+        ref={labelRef}
+        tabIndex="0"
+        role="button"
+        htmlFor={id}
         className={[
+          'h-full inline-flex items-center focus:outline-none select-none',
           css`
-            @apply flex-col justify-center items-center;
-            min-height: 530px;
+            z-index: 1000;
           `,
         ]}
+        aria-label="menu"
       >
+        <AnimatedMenuIcon />
+      </label>
+      <ul className="relative bg-white flex-col justify-center items-center">
         {menuItems.map((e, i) => (
           <li
             key={i}
@@ -71,7 +75,7 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
           >
             <a
               href={e.href}
-              className="inline-block text-center text-grey text-2xl font-medium flex-auto py-3"
+              className="inline-block text-center text-grey text-2xl font-medium active:text-blue flex-auto py-3"
               onClick={() => handleClick()}
             >
               {e.name}
