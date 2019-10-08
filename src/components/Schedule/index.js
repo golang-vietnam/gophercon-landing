@@ -59,7 +59,7 @@ const schedule = [
     time: '11:00',
     title: 'A colorful journey of be from NodeJS to Go',
     content:
-      "Sooner or later, anyone of us will have a chance to deal with something call legacy code, the code maintained by someone other than the original author. Let me tell you the way how to overcome it, how we come from single monolith application to 100+ services",
+      "Sooner or later, everyone of us, must face a beast, called legacy, the code maintained by someone not the author. Let me tell you how we face and beat it, a journey from a black hole 100k LOC monolithic application to 100+ microservices",
     speaker: {
       avatar:
         'https://i.imgur.com/w7zzT6s.jpg',
