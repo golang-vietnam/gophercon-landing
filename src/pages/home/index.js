@@ -6,6 +6,7 @@ import Contact from '@/components/Contact'
 import AutoHeader from '@/components/AutoHeader'
 import HeroSection from './HeroSection'
 import Footer from './Footer'
+import FloatingButton from '@/components/FloatingButton'
 
 const Home = () => {
   const aboutSectionRef = React.useRef(null)
@@ -19,6 +20,7 @@ const Home = () => {
       <Speakers id="speakers" />
       <Contact id="schedule" />
       <Footer />
+      <FloatingButton href="https://ticketbox.vn" target="_blank" rel="noopener noreferrer" />
     </div>
   )
 }
