@@ -12,13 +12,13 @@ const Home = () => {
   const aboutSectionRef = React.useRef(null)
 
   return (
-    <div>
+    <div id="home">
       <HeroSection id="hero" />
       <AutoHeader />
-      <Schedule id="home" />
+      <Schedule id="schedule" />
       <Sponsors id="sponsors" />
       <Speakers id="speakers" />
-      <Contact id="schedule" />
+      <Contact id="contact" />
       <Footer />
       <FloatingButton href="https://ticketbox.vn/event/gophercon-vietnam-2019-77299" target="_blank" rel="noopener noreferrer" />
     </div>

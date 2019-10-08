@@ -1,19 +1,19 @@
 // Imports
-import plugin0 from '/Users/runi/Documents/GoSourceFolder/src/github.com/golang-vietnam/gophercon-landing/node_modules/react-static-plugin-reach-router/browser.api.js'
+import plugin0 from '/Users/ldhnam/development/gophercon-landing/node_modules/react-static-plugin-reach-router/browser.api.js'
 
 // Plugins
 const plugins = [{
-        location: "/Users/runi/Documents/GoSourceFolder/src/github.com/golang-vietnam/gophercon-landing/node_modules/react-static-plugin-reach-router",
+        location: "/Users/ldhnam/development/gophercon-landing/node_modules/react-static-plugin-reach-router",
         plugins: [],
         hooks: plugin0({})
       },
 {
-        location: "/Users/runi/Documents/GoSourceFolder/src/github.com/golang-vietnam/gophercon-landing/node_modules/react-static-plugin-favicons",
+        location: "/Users/ldhnam/development/gophercon-landing/node_modules/react-static-plugin-favicons",
         plugins: [],
         hooks: {}
       },
 {
-        location: "/Users/runi/Documents/GoSourceFolder/src/github.com/golang-vietnam/gophercon-landing",
+        location: "/Users/ldhnam/development/gophercon-landing",
         plugins: [],
         hooks: {}
       }]
