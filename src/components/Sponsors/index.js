@@ -10,12 +10,12 @@ const rows = [
         image: 'chotot',
       },
       {
-        href: 'https://www.sendo.vn',
-        image: 'sendo',
+        href: 'https://www.be.xyz',
+        image: 'be',
       },
       {
-        href: 'https://trustingsocial.com/',
-        image: 'trustingsocial',
+        href: 'https://brank.as',
+        image: 'brankas',
       },
     ],
   },
@@ -44,12 +44,8 @@ const rows = [
         image: 'dwarves',
       },
       {
-        href: 'https://missmp.eu/',
-        image: 'missmoney',
-      },
-      {
-        href: 'https://www.mercari.com/jp/',
-        image: 'mercari',
+        href: 'https://corp.moneyforward.com/en/',
+        image: 'money-forward',
       },
     ],
   },
@@ -113,6 +109,7 @@ const Sponsors = ({ ...rest }) => {
                       &:hover {
                         box-shadow: 15px 15px 30px 0 rgba(210, 210, 210, 0.5);
                       }
+                      transition: box-shadow 0.3s linear;
                     `,
                   ]}
                   target="__blank"
