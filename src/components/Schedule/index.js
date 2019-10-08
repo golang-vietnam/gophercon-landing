@@ -158,7 +158,7 @@ const schedule = [
   },
   {
     highlighted: true,
-    time: '15:45',
+    time: '16:45',
     title: 'Closing talk',
     // desc:
     //   'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems 6 predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
@@ -172,7 +172,7 @@ const schedule = [
   },
   {
     highlighted: false,
-    time: '16:30',
+    time: '17:30',
     title: 'Closing',
   },
 ]
