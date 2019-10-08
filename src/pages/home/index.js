@@ -7,6 +7,7 @@ import AutoHeader from '@/components/AutoHeader'
 import HeroSection from './HeroSection'
 import Footer from './Footer'
 import FloatingButton from '@/components/FloatingButton'
+import Join from '@/components/Join'
 
 const Home = () => {
   const aboutSectionRef = React.useRef(null)
@@ -16,6 +17,7 @@ const Home = () => {
       <HeroSection id="hero" />
       <AutoHeader />
       <Schedule id="schedule" />
+      <Join id="join" />
       <Sponsors id="sponsors" />
       <Speakers id="speakers" />
       <Contact id="contact" />
