@@ -20,7 +20,7 @@ const Home = () => {
       <Speakers id="speakers" />
       <Contact id="schedule" />
       <Footer />
-      <FloatingButton href="https://ticketbox.vn" target="_blank" rel="noopener noreferrer" />
+      <FloatingButton href="https://ticketbox.vn/event/gophercon-vietnam-2019-77299" target="_blank" rel="noopener noreferrer" />
     </div>
   )
 }
