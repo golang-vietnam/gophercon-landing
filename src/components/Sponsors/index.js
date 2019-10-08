@@ -26,10 +26,10 @@ const rows = [
         href: 'https://global.axon.com/',
         image: 'axon',
       },
-      {
-        href: 'https://www.grab.com/',
-        image: 'grab',
-      },
+      // {
+      //   href: 'https://www.grab.com/',
+      //   image: 'grab',
+      // },
       {
         href: 'https://www.vng.com.vn/',
         image: 'vng',
