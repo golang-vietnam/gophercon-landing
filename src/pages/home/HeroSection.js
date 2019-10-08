@@ -20,7 +20,7 @@ const HeroSection = ({ ...rest }) => {
       <Header
         className={[
           css`
-            --mobile-menu-top: 68px;
+            --mobile-menu-top: 64px;
 
             @screen md {
               height: 140px;
