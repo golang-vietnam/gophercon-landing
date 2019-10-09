@@ -7,21 +7,23 @@ import AutoHeader from '@/components/AutoHeader'
 import HeroSection from './HeroSection'
 import Footer from './Footer'
 import FloatingButton from '@/components/FloatingButton'
+import Join from '@/components/Join'
 
 const Home = () => {
   const aboutSectionRef = React.useRef(null)
 
   return (
-    <div>
+    <div id="home">
       <HeroSection id="hero" />
       <AutoHeader />
-      <Schedule id="home" />
-      <Speakers id="speakers" />
+      <Schedule id="schedule" />
+      <Join id="join" />
       <Sponsors id="sponsors" />
-      <Contact id="schedule" />
+      <Speakers id="speakers" />
+      <Contact id="contact" />
       <Footer />
       <FloatingButton
-        href="https://ticketbox.vn"
+        href="https://ticketbox.vn/event/gophercon-vietnam-2019-77299"
         target="_blank"
         rel="noopener noreferrer"
       />

@@ -60,7 +60,7 @@ const schedule = [
     time: '11:00',
     title: 'A colorful journey of be from NodeJS to Go',
     content:
-      "Sooner or later, anyone of us will have a chance to deal with something call legacy code, the code maintained by someone other than the original author. Let's me tell you the way how to overcome it, how we come from single monolith application to 100+ services",
+      "Sooner or later, everyone of us, must face a beast, called legacy, the code maintained by someone not the author. Let me tell you how we face and beat it, a journey from a black hole 100k LOC monolithic application to 100+ microservices",
     speaker: {
       avatar: 'https://i.imgur.com/w7zzT6s.jpg',
       name: 'Thach Le',
@@ -161,7 +161,7 @@ const schedule = [
   },
   {
     highlighted: true,
-    time: '15:45',
+    time: '16:45',
     title: 'Closing talk',
     // desc:
     //   'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems 6 predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
@@ -175,7 +175,7 @@ const schedule = [
   },
   {
     highlighted: false,
-    time: '16:30',
+    time: '17:30',
     title: 'Closing',
   },
 ]
