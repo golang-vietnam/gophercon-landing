@@ -36,22 +36,30 @@ const Speakers = ({ ...rest }) => {
       >
         <div className="container flex flex-row">
           {speakers &&
-            speakers.map((s, key, arr) => (
+            speakers.map((s, key) => (
               <div
                 key={key}
                 className={[
-                  'bg-white flex-none mr-6',
+                  'text-white bg-primary flex-none',
                   css`
                     width: 300px;
-                    height: 435px;
                   `,
-                  key === arr.length - 1 && 'mr-10',
+                  key !== speakers.length - 1 && 'mr-6',
                 ]}
               >
-                <div>
-                  <s.avatar />
+                <div
+                  className={[
+                    css`
+                      height: 330px;
+                    `,
+                  ]}
+                >
+                  <s.avatar className="w-full h-full" />
                 </div>
-                {s.name}
+                <div className="h-32 mt-10">
+                  <h3 className="font-bold mb-4">{s.name}</h3>
+                  <div>{s.position}</div>
+                </div>
               </div>
             ))}
         </div>
