@@ -3,6 +3,7 @@ import { css } from 'linaria'
 import LazyImage from '@/components/LazyImage'
 import Header from './Header'
 import SvgArrow from './images/horizontal-arrow.svg?svgr'
+import HeroWaterIcon from './images/heroWaterBg.svg?svgr'
 
 const HeroSection = ({ ...rest }) => {
   return (
@@ -83,17 +84,14 @@ const HeroSection = ({ ...rest }) => {
           />
         </div>
       </div>
-      <LazyImage
-        {...require('./images/heroBg.png?sqip')}
+      <HeroWaterIcon
         alt="header background"
         className={[
-          'w-screen absolute z-10 bottom-0',
+          'absolute z-10 bottom-0 bg-repeat-x',
           css`
             height: 95px;
-            object-fit: cover;
             @screen lg {
               height: 170px;
-              object-fit: fill;
             }
           `,
         ]}
