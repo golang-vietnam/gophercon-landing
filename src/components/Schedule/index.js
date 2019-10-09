@@ -17,7 +17,8 @@ const schedule = [
     highlighted: false,
     time: '09:00',
     title: 'Opening Keynote',
-    content: 'End the wars with Tanuki - Multiple programming languages in single web application.',
+    content:
+      'End the wars with Tanuki - Multiple programming languages in single web application.',
     speaker: {
       avatar:
         'https://media.licdn.com/dms/image/C5103AQEzEldCV1TSIQ/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=4O2RyC1E6yXRiE75H2BxD8LBUBCH3GF_diCU7kGbiyY',
@@ -61,8 +62,7 @@ const schedule = [
     content:
       "Sooner or later, anyone of us will have a chance to deal with something call legacy code, the code maintained by someone other than the original author. Let's me tell you the way how to overcome it, how we come from single monolith application to 100+ services",
     speaker: {
-      avatar:
-        'https://i.imgur.com/w7zzT6s.jpg',
+      avatar: 'https://i.imgur.com/w7zzT6s.jpg',
       name: 'Thach Le',
       position: 'Engineer Manager at BEGROUP',
     },
@@ -73,7 +73,7 @@ const schedule = [
     time: '11:45',
     title: '[Lightning Talk] A practical way to generate unique id with Go',
     content:
-      "Unique ID generation is variant and not so simple to fit with what the system wants. In this talk, I’ll talk about how my team designed and implemented a custom Unique ID generation method, that fits our requirements, and powers all service-to-service request’s id in my company.",
+      'Unique ID generation is variant and not so simple to fit with what the system wants. In this talk, I’ll talk about how my team designed and implemented a custom Unique ID generation method, that fits our requirements, and powers all service-to-service request’s id in my company.',
     speaker: {
       avatar:
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/eudn8m23lh_IMG_1104.JPG',
@@ -90,7 +90,8 @@ const schedule = [
   {
     highlighted: false,
     time: '13:00',
-    title: 'Introduction to NATS: A high-performance messaging system as a solution for communication between services',
+    title:
+      'Introduction to NATS: A high-performance messaging system as a solution for communication between services',
     content:
       'The NATS project has been around since 2010, but it has become more popular in recent years due to how well it fits into the paradigm of cloud-native applications, and microservices architectures. This talk will introduce NATS using Go and our stories using NATS in production at kumparan.',
     speaker: {
@@ -104,7 +105,8 @@ const schedule = [
   {
     highlighted: false,
     time: '13:45',
-    title: 'How to leverage Gunk - the Go-derived syntax for Protocol Buffers to massively write microservices',
+    title:
+      'How to leverage Gunk - the Go-derived syntax for Protocol Buffers to massively write microservices',
     content:
       'Introduce how using Gunk, a modern frontend and syntax for Google’s Protocol Buffers that is instantly familiar and accessible to Go developers. Gunk builds on the venerable Go tooling – including versioning with Go modules, and a Go-derived syntax – to create streamlined, project-based workflows for building REST and gRPC services.',
     speaker: {
@@ -150,7 +152,8 @@ const schedule = [
     content:
       'CloudGaming is the new buzzword recently with the participation of Google Stadia, Microsoft Xcloud. Behind Cloud Gaming is the art of super-low latency media streaming. Let’s find out how I can use Golang stack to create a Cloud Gaming platform that can bring the smoothest gaming experience.',
     speaker: {
-      avatar: 'https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-1/50655434_1967490259964988_7169114008383913984_o.jpg?_nc_cat=103&_nc_oc=AQldMVbt1jIipW1PXSg2qbwtmxKPpoKvNnrpb7-AuQ6TL5HTp_A9sz7BpEFT5Ci0n80&_nc_ht=scontent.fsgn5-7.fna&oh=a934303008bbf151e3f92594acaab4a6&oe=5E2B6863',
+      avatar:
+        'https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-1/50655434_1967490259964988_7169114008383913984_o.jpg?_nc_cat=103&_nc_oc=AQldMVbt1jIipW1PXSg2qbwtmxKPpoKvNnrpb7-AuQ6TL5HTp_A9sz7BpEFT5Ci0n80&_nc_ht=scontent.fsgn5-7.fna&oh=a934303008bbf151e3f92594acaab4a6&oe=5E2B6863',
       name: 'Thanh Nguyen',
       position: 'Software Engineer at Grab',
     },

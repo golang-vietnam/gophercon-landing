@@ -16,11 +16,15 @@ const Home = () => {
       <HeroSection id="hero" />
       <AutoHeader />
       <Schedule id="home" />
-      <Sponsors id="sponsors" />
       <Speakers id="speakers" />
+      <Sponsors id="sponsors" />
       <Contact id="schedule" />
       <Footer />
-      <FloatingButton href="https://ticketbox.vn" target="_blank" rel="noopener noreferrer" />
+      <FloatingButton
+        href="https://ticketbox.vn"
+        target="_blank"
+        rel="noopener noreferrer"
+      />
     </div>
   )
 }

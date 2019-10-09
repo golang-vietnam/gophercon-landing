@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from 'linaria'
+import speakers from './speakers'
 
 const Speakers = ({ ...rest }) => {
   return (
@@ -21,6 +22,38 @@ const Speakers = ({ ...rest }) => {
               Become a speaker
             </a>
           </div>
+        </div>
+      </div>
+      <div
+        className={[
+          'w-screen overflow-x-auto',
+          css`
+            ::-webkit-scrollbar {
+              display: none;
+            }
+          `,
+        ]}
+      >
+        <div className="container flex flex-row">
+          {speakers &&
+            speakers.map((s, key, arr) => (
+              <div
+                key={key}
+                className={[
+                  'bg-white flex-none mr-6',
+                  css`
+                    width: 300px;
+                    height: 435px;
+                  `,
+                  key === arr.length - 1 && 'mr-10',
+                ]}
+              >
+                <div>
+                  <s.avatar />
+                </div>
+                {s.name}
+              </div>
+            ))}
         </div>
       </div>
     </div>
