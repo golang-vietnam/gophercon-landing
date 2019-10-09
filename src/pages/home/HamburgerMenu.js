@@ -91,14 +91,19 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
             </a>
           </li>
         ))}
-        <LazyImage
-          {...require('./images/heroBg.png?sqip')}
-          alt="header background"
+        <div
           className={[
-            'w-screen absolute bottom-0 object-cover',
             css`
+              @apply bottom-0 left-0 absolute w-screen z-30;
+              background-image: url(${require('./images/heroBg.png')});
+              background-size: contain;
+              background-repeat-x: repeat;
+              background-repeat-y: no-repeat;
+              background-position: center;
               height: 95px;
-              z-index: 200;
+              @screen lg {
+                height: 170px;
+              }
             `,
           ]}
         />
