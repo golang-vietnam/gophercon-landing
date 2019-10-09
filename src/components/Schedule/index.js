@@ -146,6 +146,7 @@ const schedule = [
       'We’ve seen Go being used widely in high performant backend applications, gRPC, embedded systems and so on. Not Choosing Go, needs more understanding and convincing. Obvious thing would be reflection, Will see use case and code, also will cover how go differs from our assumption.',
     speaker: {
       avatar: [
+        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/d56qbrt37s_speaker.jpg',
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/ciq7zh3b5p_PROFILE_PIC.jpg',
       ],
       name: 'Dinesh Kumar and Maulik Soneji',
@@ -162,9 +163,10 @@ const schedule = [
     speaker: {
       avatar: [
         'https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-1/50655434_1967490259964988_7169114008383913984_o.jpg?_nc_cat=103&_nc_oc=AQldMVbt1jIipW1PXSg2qbwtmxKPpoKvNnrpb7-AuQ6TL5HTp_A9sz7BpEFT5Ci0n80&_nc_ht=scontent.fsgn5-7.fna&oh=a934303008bbf151e3f92594acaab4a6&oe=5E2B6863',
+        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/t3793ll1xn_72115278_2467426763537614_1520100230131875840_n.png',
       ],
-      name: 'Thanh Nguyen',
-      position: 'Software Engineer at Grab',
+      name: 'Thanh Nguyen and Minh Tri',
+      position: 'Software Engineer at Grab and Shopee',
     },
     // link: 'https://ask.gophercon.vn/event/KYMW',
   },
