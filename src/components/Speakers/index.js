@@ -53,6 +53,7 @@ const Speakers = ({ ...rest }) => {
                 <div
                   className={[
                     css`
+                      @apply relative;
                       height: 300px;
                       @srcreen md {
                         height: 330px;
@@ -60,12 +61,21 @@ const Speakers = ({ ...rest }) => {
                     `,
                   ]}
                 >
+                  <div
+                    className={[
+                      'absolute w-full h-full z-20 opacity-25',
+                      css`
+                        background-color: #000125;
+                      `,
+                    ]}
+                  />
                   <s.avatar
                     className={[
                       'w-full h-full object-cover',
                       css`
-                        -webkit-filter: grayscale(90%);
-                        filter: grayscale(90%);
+                        filter: brightness(3);
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
                       `,
                     ]}
                   />
