@@ -40,9 +40,12 @@ const Speakers = ({ ...rest }) => {
               <div
                 key={key}
                 className={[
-                  'text-white bg-primary flex-none',
+                  'text-white flex-none',
                   css`
-                    width: 300px;
+                    width: 250px;
+                    @screen md {
+                      width: 300px;
+                    }
                   `,
                   key !== speakers.length - 1 && 'mr-6',
                 ]}
@@ -50,11 +53,22 @@ const Speakers = ({ ...rest }) => {
                 <div
                   className={[
                     css`
-                      height: 330px;
+                      height: 300px;
+                      @srcreen md {
+                        height: 330px;
+                      }
                     `,
                   ]}
                 >
-                  <s.avatar className="w-full h-full" />
+                  <s.avatar
+                    className={[
+                      'w-full h-full object-cover',
+                      css`
+                        -webkit-filter: grayscale(90%);
+                        filter: grayscale(90%);
+                      `,
+                    ]}
+                  />
                 </div>
                 <div className="h-32 mt-10">
                   <h3 className="font-bold mb-4">{s.name}</h3>
