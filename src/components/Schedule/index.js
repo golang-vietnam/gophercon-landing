@@ -195,9 +195,9 @@ const Schedule = ({ ...rest }) => {
     return String(path).substr(0, 4) === 'http'
   }
   return (
-    <div className="container my-12 md:my-24" {...rest}>
-      <div className="md:col text-grey">
-        <div className="md:row font-bold text-3xl md:text-5xl text-primary border-b pb-10">
+    <div className="page-section container my-12 md:my-24" {...rest}>
+      <div className="row md:col text-grey">
+        <div className="container md:row font-bold text-3xl md:text-5xl text-primary border-b pb-10">
           Schedule
         </div>
         {schedule.map((s, key) => (
@@ -205,9 +205,9 @@ const Schedule = ({ ...rest }) => {
             key={key}
             className="container xs:row xs:flex xs:justify-start py-10 border-b"
           >
-            <div className="text-2xl md:text-4xl font-bold w-1/4">{s.time}</div>
+            <div className="text-xl md:text-4xl font-bold w-1/4">{s.time}</div>
             <div className="xs:w-3/4 flex flex-col justify-center">
-              <div className="text-2xl font-bold">{s.title}</div>
+              <div className="text-xl md:text-2xl font-bold">{s.title}</div>
               <div className="text-base">{s.content}</div>
               {s.speaker && s.speaker.avatar.length > 0 && (
                 <div className="flex justify-between">

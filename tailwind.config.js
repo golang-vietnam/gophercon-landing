@@ -9,7 +9,7 @@ module.exports = {
       padding: '1rem',
     },
     screens: {
-      xs: '400px',
+      xs: '300px',
       // => @media (min-width: 400px) { ... }
       sm: '640px',
       // => @media (min-width: 640px) { ... }

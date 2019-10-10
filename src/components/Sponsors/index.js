@@ -64,13 +64,17 @@ const rows = [
         href: 'http://www.coderschool.vn/',
         image: 'coderschool',
       },
+      {
+        href: 'https://circo.co',
+        image: 'circo',
+      },
     ],
   },
 ]
 
 const Sponsors = ({ ...rest }) => {
   return (
-    <div className={'py-16 lg:py-25 mt-24'} {...rest}>
+    <div className="page-section py-16 lg:py-25" {...rest}>
       <div className="container text-grey">
         <div className={['mb-16 md:flex md:justify-between md:items-center']}>
           <div
@@ -98,13 +102,13 @@ const Sponsors = ({ ...rest }) => {
             </div>
             {sponsors.map(({ href, image }) => (
               <div
-                className="col sm:w-1/3 sm:mx-0 mx-auto mb-8 flex justify-between items-center"
+                className="col sm:w-1/3 h-48 sm:mx-0 mx-auto mb-8 md:mb-16 flex justify-between items-center"
                 key={image}
               >
                 <a
                   href={href}
                   className={[
-                    'block border',
+                    'border w-full flex justify-center',
                     css`
                       &:hover {
                         box-shadow: 15px 15px 30px 0 rgba(210, 210, 210, 0.5);
