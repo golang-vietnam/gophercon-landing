@@ -74,7 +74,7 @@ const rows = [
 
 const Sponsors = ({ ...rest }) => {
   return (
-    <div className="page-section py-16 lg:py-25" {...rest}>
+    <div className="page-section pt-16 lg:py-25" {...rest}>
       <div className="container text-grey">
         <div className={['mb-16 md:flex md:justify-between md:items-center']}>
           <div

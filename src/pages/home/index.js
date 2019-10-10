@@ -18,8 +18,8 @@ const Home = () => {
       <AutoHeader />
       <Schedule id="schedule" />
       <Join id="join" />
-      <Sponsors id="sponsors" />
       <Speakers id="speakers" />
+      <Sponsors id="sponsors" />
       <Contact id="contact" />
       <Footer />
       <FloatingButton

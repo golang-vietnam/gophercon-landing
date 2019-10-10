@@ -3,7 +3,6 @@ import { css } from 'linaria'
 import LazyImage from '@/components/LazyImage'
 import Header from './Header'
 import SvgArrow from './images/horizontal-arrow.svg?svgr'
-import SvgMascot from './images/heroImage.svg?svgr'
 
 const HeroSection = ({ ...rest }) => {
   return (

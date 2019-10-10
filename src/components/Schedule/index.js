@@ -197,7 +197,7 @@ const Schedule = ({ ...rest }) => {
   return (
     <div className="page-section container my-12 md:my-24" {...rest}>
       <div className="row md:col text-grey">
-        <div className="container md:row font-bold text-3xl md:text-5xl text-primary border-b pb-10">
+        <div className="font-bold text-3xl md:text-5xl text-primary border-b pb-10">
           Schedule
         </div>
         {schedule.map((s, key) => (

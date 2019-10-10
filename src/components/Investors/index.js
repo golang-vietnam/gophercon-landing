@@ -125,7 +125,7 @@ const Investors = ({ ...rest }) => {
           OUR VC PARTNERS
         </h2>
 
-        <div className="flex flex-wrap">
+        <div className="flex">
           {investorsList.map((i, key) => (
             <div
               key={key}
