@@ -32,7 +32,6 @@ class AutoHeader extends Component {
             height: 64px;
             opacity: 0;
             transform: translateY(-100%);
-            transition: transform 200ms ease-in-out, opacity 250ms ease-out;
             @screen lg {
               height: 90px;
             }

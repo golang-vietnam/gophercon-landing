@@ -31,7 +31,7 @@ const HeroSection = ({ ...rest }) => {
       />
       <div
         className={[
-          'container w-full mt-20',
+          'container w-full mt-24 md:mt-32 lg:mt-48',
           css`
             min-height: 450px;
             @screen md {
@@ -40,8 +40,8 @@ const HeroSection = ({ ...rest }) => {
           `,
         ]}
       >
-        <div className="mb-10">
-          <div className="font-bold text-4xl  md:text-6xl text-white text-center md:text-left mb-6">
+        <div className="mb-10 md:w-1/2">
+          <div className="font-bold text-2xl md:text-4xl lg:text-6xl text-white text-center md:text-left mb-6">
             Gophercon <br /> Vietnam <span className="text-blue">2019</span>
           </div>
           <div className="font-semibold text-2xl text-white flex items-center justify-center md:justify-start">
@@ -51,7 +51,7 @@ const HeroSection = ({ ...rest }) => {
         </div>
         <div
           className={[
-            'flex',
+            'flex md:w-1/2',
             css`
               @apply justify-center;
               @screen md {
@@ -70,6 +70,12 @@ const HeroSection = ({ ...rest }) => {
                 width: 240px;
                 height: 226px;
                 margin-bottom: 80px;
+                @screen md {
+                  width: 300px;
+                  height: 260px;
+                  margin-bottom: 0px;
+                  position: absolute;
+                  bottom: 90px;
                 @screen lg {
                   width: 440px;
                   height: 418px;
@@ -85,7 +91,7 @@ const HeroSection = ({ ...rest }) => {
         <div
           className={[
             css`
-              @apply bottom-0 left-0 absolute w-screen z-10;
+              @apply bottom-0 left-0 absolute w-full z-10;
               background-image: url(${require('./images/heroBg.png')});
               background-size: contain;
               background-repeat-x: repeat;
