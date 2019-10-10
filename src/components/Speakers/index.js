@@ -28,7 +28,7 @@ const Speakers = ({ ...rest }) => {
       </div>
       <div
         className={[
-          'w-screen overflow-x-auto',
+          'w-screen overflow-x-scroll',
           css`
             ::-webkit-scrollbar {
               display: none;
@@ -36,7 +36,7 @@ const Speakers = ({ ...rest }) => {
           `,
         ]}
       >
-        <div className="container flex flex-row">
+        <div className="flex flex-row">
           {speakers &&
             speakers.map((s, key) => (
               <div
