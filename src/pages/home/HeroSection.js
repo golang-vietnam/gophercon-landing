@@ -7,10 +7,11 @@ import SvgArrow from './images/horizontal-arrow.svg?svgr'
 const HeroSection = ({ ...rest }) => {
   return (
     <section
+      id="hero"
       className={[
-        'bg-primary relative',
+        'page-section bg-primary relative',
         css`
-          @screen xl {
+          @screen lg {
             min-height: 800px;
           }
         `,
@@ -23,7 +24,7 @@ const HeroSection = ({ ...rest }) => {
             --mobile-menu-top: 64px;
 
             @screen md {
-              height: 140px;
+              height: 100px;
               --mobile-menu-top: 100px;
             }
           `,

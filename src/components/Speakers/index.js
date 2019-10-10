@@ -4,7 +4,11 @@ import speakers from './speakers'
 
 const Speakers = ({ ...rest }) => {
   return (
-    <div className="page-section py-16 lg:py-25 mt-24 bg-primary" {...rest}>
+    <div
+      id="speakers"
+      className="page-section py-16 lg:py-25 mt-24 bg-primary"
+      {...rest}
+    >
       <div className="container">
         <div
           className={[

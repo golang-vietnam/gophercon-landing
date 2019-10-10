@@ -9,16 +9,16 @@ const menu = [
     href: '#home',
   },
   {
-    name: 'Sponsors',
-    href: '#sponsors',
+    name: 'Schedule',
+    href: '#schedule',
   },
   {
     name: 'Speakers',
     href: '#speakers',
   },
   {
-    name: 'Schedule',
-    href: '#schedule',
+    name: 'Sponsors',
+    href: '#sponsors',
   },
 ]
 
@@ -41,8 +41,8 @@ const Header = ({ children, className }) => {
             width: 118px;
             height: 35px;
             @screen md {
-              width: 190px;
-              height: 60px;
+              width: 170px;
+              height: 54px;
             }
           `,
         ]}

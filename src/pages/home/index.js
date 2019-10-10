@@ -8,7 +8,6 @@ import HeroSection from './HeroSection'
 import Footer from './Footer'
 import FloatingButton from '@/components/FloatingButton'
 import Join from '@/components/Join'
-import $ from 'jquery'
 
 const Home = () => {
   const aboutSectionRef = React.useRef(null)
@@ -22,18 +21,20 @@ const Home = () => {
     window.addEventListener('scroll', function() {
       // currentScroll is the number of pixels the window has been scrolled
       let currentScroll = window.scrollY
+      // console.log(currentScroll)
 
       // $currentSection is somewhere to place the section we must be looking at
       let currentSection
 
       // We check the position of each of the divs compared to the windows scroll positon
-      Array.from(sections).forEach(s => {
+      Array.from(sections).forEach((s, key) => {
         // divPosition is the position down the page in px of the current section we are testing
         var divPosition = s.offsetTop
-
+        // console.log(s)
         // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
         // the -1 is so that it includes the div 1px before the div leave the top of the window.
-        if (divPosition - 1 < currentScroll) {
+        // console.log('divPosition ', divPosition)
+        if (divPosition < currentScroll + 1) {
           // We have either read the section or are currently reading the section so we'll call it our current section
           currentSection = s
 
@@ -41,24 +42,33 @@ const Home = () => {
         }
 
         // This is the bit of code that uses the currentSection as its source of ID
-        let id = currentSection.id
-        console.log(id)
-        // $('a').removeClass('active')
-        // document.querySelector(`[href=#${id}]`).addClass('active')
-        // $('[href=#' + id + ']').addClass('active')
+        let id = currentSection.id || undefined
+        if (id) {
+          Array.from(document.getElementsByTagName('a')).forEach(a => {
+            a.classList.remove('active')
+            let href = `"` + `#${id}` + `"`
+            // console.log(href)
+            // console.log(document.querySelector(`[href = ${href}]`))
+            if (document.querySelector(`a[href = ${href}]`)) {
+              document
+                .querySelector(`a[href = ${href}]`)
+                .classList.add('active')
+            }
+          })
+        }
       })
     })
   }, [])
 
   return (
     <div id="home">
-      <HeroSection id="hero" />
+      <HeroSection />
       <AutoHeader />
-      <Schedule id="schedule" />
-      <Join id="join" />
-      <Speakers id="speakers" />
-      <Sponsors id="sponsors" />
-      <Contact id="contact" />
+      <Schedule />
+      <Join />
+      <Speakers />
+      <Sponsors />
+      <Contact />
       <Footer />
       <FloatingButton
         href="https://ticketbox.vn/event/gophercon-vietnam-2019-77299"
