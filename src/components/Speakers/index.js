@@ -18,12 +18,6 @@ const Speakers = ({ ...rest }) => {
           >
             Speakers
           </div>
-          <div
-            className="font-medium text-base w-48 py-2 text-primary bg-white inline-block"
-            href="#"
-          >
-            <a>Become a speaker</a>
-          </div>
         </div>
       </div>
       <div
