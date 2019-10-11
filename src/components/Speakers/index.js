@@ -26,7 +26,7 @@ const Speakers = ({ ...rest }) => {
       </div>
       <div
         className={[
-          'w-screen overflow-x-auto',
+          'w-full overflow-x-auto',
           css`
             ::-webkit-scrollbar {
               display: none;
