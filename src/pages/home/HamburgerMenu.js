@@ -18,7 +18,7 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
   )
   const handleClick = () => {
     labelRef.current.click()
-    setIsActive(!isActive)
+    toggleActive()
   }
 
   return (
@@ -81,9 +81,7 @@ const HamburgerMenu = ({ className, menuItems = [] }) => {
               href={e.href}
               className={[
                 'inline-block text-center text-grey text-2xl font-medium flex-auto py-3',
-                typeof window !== 'undefined' &&
-                  window.location.href.includes(e.href) &&
-                  'active',
+                window.location.href.includes(e.href) && 'active',
               ]}
               onClick={() => handleClick()}
             >

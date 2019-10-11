@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Schedule from '@/components/Schedule'
 import Sponsors from '@/components/Sponsors'
 import Speakers from '@/components/Speakers'
@@ -8,7 +8,7 @@ import HeroSection from './HeroSection'
 import Footer from './Footer'
 import FloatingButton from '@/components/FloatingButton'
 import Join from '@/components/Join'
-
+import debounce from '@/utils/debounce'
 const Home = () => {
   const aboutSectionRef = React.useRef(null)
 
@@ -40,30 +40,25 @@ const Home = () => {
 
           // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
         }
-
-        // This is the bit of code that uses the currentSection as its source of ID
-        let id = currentSection.id || undefined
-        if (id) {
-          Array.from(document.getElementsByTagName('a')).forEach(a => {
-            a.classList.remove('active')
-            let href = `"` + `#${id}` + `"`
-            // console.log(href)
-            // console.log(document.querySelector(`[href = ${href}]`))
-            if (document.querySelector(`a[href = ${href}]`)) {
-              document
-                .querySelector(`a[href = ${href}]`)
-                .classList.add('active')
-            }
-          })
-        }
       })
+      // This is the bit of code that uses the currentSection as its source of ID
+      let id = currentSection.id
+      Array.from(document.getElementsByTagName('a')).forEach(a => {
+        a.classList.remove('active')
+      })
+      let href = `"` + `#${id}` + `"`
+      if (document && document.querySelector(`a[href = ${href}]`)) {
+        document.querySelector(`a[href = ${href}]`).classList.add('text-blue')
+        console.log(document.querySelector(`a[href=${href}]`))
+        // setUpdate(!update)
+      }
     })
   }, [])
 
   return (
-    <div id="home">
+    <div>
       <HeroSection />
-      <AutoHeader />
+      <AutoHeader id="home" />
       <Schedule />
       <Join />
       <Speakers />
