@@ -201,13 +201,13 @@ const Schedule = ({ ...rest }) => {
       {...rest}
     >
       <div className="row md:col text-grey">
-        <div className="font-bold text-3xl md:text-5xl text-primary border-b pb-10">
+        <div className="container font-bold text-3xl md:text-5xl text-primary border-b pb-10">
           Schedule
         </div>
         {schedule.map((s, key) => (
           <div
             key={key}
-            className="container xs:row xs:flex xs:justify-start py-10 border-b"
+            className="container xs:flex xs:justify-start py-10 border-b"
           >
             <div className="text-xl md:text-4xl font-bold w-1/4">{s.time}</div>
             <div className="xs:w-3/4 flex flex-col justify-center">

@@ -27,7 +27,7 @@ const Header = ({ children, className }) => {
     <header
       className={[
         className,
-        'container text-right flex justify-between items-center text-white focus:text-blue',
+        'container xs:col text-right flex justify-between items-center text-white focus:text-blue',
         css`
           height: 100px;
         `,
