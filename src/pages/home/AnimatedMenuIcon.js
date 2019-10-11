@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const AnimatedMenuIcon = ({ isActive = false, toggleActive }) => {
   return (

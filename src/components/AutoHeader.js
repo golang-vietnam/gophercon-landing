@@ -10,7 +10,7 @@ class AutoHeader extends Component {
       root: null,
       threshold: 0,
     })
-    observer.observe(document.getElementById('hero'))
+    observer.observe(document.getElementById('home'))
   }
 
   componentDidCatch(error, errorInfo) {
@@ -33,13 +33,13 @@ class AutoHeader extends Component {
             opacity: 0;
             transform: translateY(-100%);
             @screen lg {
-              height: 140px;
+              height: 100px;
             }
           `,
           visible &&
             css`
               opacity: 1;
-              transition: transform 250ms ease-in-out, opacity 100ms ease-out;
+              transition: transform 250ms ease-in-out, opacity 150ms ease-out;
               transform: translateY(0);
             `,
         ]}

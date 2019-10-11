@@ -1,6 +1,4 @@
-window.$ = window.jQuery = require('jquery')
-
-var scrollScript = $(document).ready(function() {
+$(document).ready(function() {
   // $sections incleudes all of the container divs that relate to menu items.
   var $sections = $('.section')
 
@@ -33,5 +31,3 @@ var scrollScript = $(document).ready(function() {
     })
   })
 })
-
-export default scrollScript

@@ -39,6 +39,10 @@ a.active {
   @apply text-blue;
 }
 
+.active {
+  @apply text-blue;
+}
+
 @keyframes shadow-pulse {
   0% {
     box-shadow: 0 0 0 0px rgba(62, 53, 138, 0.2);
