@@ -13,7 +13,7 @@ const Home = () => {
   const aboutSectionRef = React.useRef(null)
 
   return (
-    <div>
+    <div className="relative">
       <HeroSection />
       <AutoHeader />
       <Schedule />

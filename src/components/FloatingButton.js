@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FloatingButton(props) {
   return (
-    <div className="container">
+    <div className="container absolute z-50">
       <a {...props}>
         <button
           className="fixed bottom-0 right-0 m-5 border border-solid border-gray-200 rounded-full w-20 h-20 flex items-center justify-center bg-white"
