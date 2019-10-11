@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { css } from 'linaria'
 import speakers from './speakers'
 
@@ -34,58 +34,60 @@ const Speakers = ({ ...rest }) => {
           `,
         ]}
       >
-        <div className="container flex flex-row">
-          {speakers &&
-            speakers.map((s, key) => (
-              <div
-                key={key}
-                className={[
-                  'text-white flex-none',
-                  css`
-                    width: 250px;
-                    @screen md {
-                      width: 300px;
-                    }
-                  `,
-                  key !== speakers.length - 1 && 'mr-6',
-                ]}
-              >
-                <div
+        <div className="container">
+          <ul className="flex flex-row">
+            {speakers &&
+              speakers.map((s, key) => (
+                <li
+                  key={key}
                   className={[
+                    'text-white flex-none',
                     css`
-                      @apply relative;
-                      height: 300px;
-                      @srcreen md {
-                        height: 330px;
+                      width: 250px;
+                      @screen md {
+                        width: 300px;
                       }
                     `,
+                    key !== speakers.length - 1 && 'mr-6',
                   ]}
                 >
                   <div
                     className={[
-                      'absolute w-full h-full z-20 opacity-25',
                       css`
-                        background-color: #000125;
+                        @apply relative;
+                        height: 300px;
+                        @srcreen md {
+                          height: 330px;
+                        }
                       `,
                     ]}
-                  />
-                  <s.avatar
-                    className={[
-                      'w-full h-full object-cover',
-                      css`
-                        filter: brightness(3);
-                        -webkit-filter: grayscale(100%);
-                        filter: grayscale(100%);
-                      `,
-                    ]}
-                  />
-                </div>
-                <div className="h-32 mt-10">
-                  <h3 className="font-bold mb-4">{s.name}</h3>
-                  <div>{s.position}</div>
-                </div>
-              </div>
-            ))}
+                  >
+                    <div
+                      className={[
+                        'absolute w-full h-full z-20 opacity-25',
+                        css`
+                          background-color: #000125;
+                        `,
+                      ]}
+                    />
+                    <s.avatar
+                      className={[
+                        'w-full h-full object-cover',
+                        css`
+                          filter: brightness(3);
+                          -webkit-filter: grayscale(100%);
+                          filter: grayscale(100%);
+                        `,
+                      ]}
+                    />
+                  </div>
+                  <div className="h-32 mt-10">
+                    <h3 className="font-bold mb-4">{s.name}</h3>
+                    <div>{s.position}</div>
+                  </div>
+                </li>
+              ))}
+          </ul>
         </div>
       </div>
     </div>
