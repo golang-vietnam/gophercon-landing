@@ -14,14 +14,6 @@ const Speakers = ({ ...rest }) => {
           >
             Speakers
           </div>
-          <div>
-            <a
-              className="font-medium text-base px-5 py-2 text-primary bg-white inline-block"
-              href="#"
-            >
-              Become a speaker
-            </a>
-          </div>
         </div>
       </div>
       <div

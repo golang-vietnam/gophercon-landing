@@ -29,7 +29,7 @@ const Header = ({ children, className }) => {
         className,
         'container text-right flex justify-between items-center text-white focus:text-blue',
         css`
-          height: 68px;
+          height: 100px;
         `,
       ]}
     >
