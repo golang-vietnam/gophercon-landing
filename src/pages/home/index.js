@@ -8,7 +8,7 @@ import HeroSection from './HeroSection'
 import Footer from './Footer'
 import FloatingButton from '@/components/FloatingButton'
 import Join from '@/components/Join'
-import debounce from '@/utils/debounce'
+
 const Home = () => {
   const aboutSectionRef = React.useRef(null)
 
