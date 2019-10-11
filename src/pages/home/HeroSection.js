@@ -7,7 +7,7 @@ import SvgArrow from './images/horizontal-arrow.svg?svgr'
 const HeroSection = ({ ...rest }) => {
   return (
     <section
-      id="hero"
+      id="home"
       className={[
         'page-section bg-primary relative',
         css`

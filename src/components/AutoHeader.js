@@ -10,7 +10,7 @@ class AutoHeader extends Component {
       root: null,
       threshold: 0,
     })
-    observer.observe(document.getElementById('hero'))
+    observer.observe(document.getElementById('home'))
   }
 
   componentDidCatch(error, errorInfo) {

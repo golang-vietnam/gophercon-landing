@@ -4,7 +4,7 @@ import speakers from './speakers'
 
 const Speakers = ({ ...rest }) => {
   return (
-    <div className={'py-16 lg:py-25 mt-24 bg-primary'} {...rest}>
+    <div id="speakers" className={'py-16 lg:py-25 mt-24 bg-primary'} {...rest}>
       <div className="container">
         <div className={['mb-16 md:flex md:justify-between md:items-center']}>
           <div
