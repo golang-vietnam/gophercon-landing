@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { css } from 'linaria'
 import speakers from './speakers'
+require('default-passive-events')
 
 const Speakers = ({ ...rest }) => {
   return (
-    <div id="speakers" className={'py-16 lg:py-25 mt-24 bg-primary'} {...rest}>
+    <div
+      id="speakers"
+      className={'page-section py-16 lg:py-25 bg-primary'}
+      {...rest}
+    >
       <div className="container">
         <div className={['mb-16 md:flex md:justify-between md:items-center']}>
           <div
@@ -18,7 +23,7 @@ const Speakers = ({ ...rest }) => {
       </div>
       <div
         className={[
-          'w-full overflow-x-auto',
+          'w-full overflow-x-scroll',
           css`
             ::-webkit-scrollbar {
               display: none;
@@ -27,7 +32,7 @@ const Speakers = ({ ...rest }) => {
         ]}
       >
         <div className="container">
-          <ul className="flex flex-row">
+          <ul className="inline-flex" id="flavoursContainer">
             {speakers &&
               speakers.map((s, key) => (
                 <li

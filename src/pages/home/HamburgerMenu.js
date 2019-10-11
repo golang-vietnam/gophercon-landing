@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { css } from 'linaria'
-import LazyImage from '@/components/LazyImage'
 import AnimatedMenuIcon from './AnimatedMenuIcon'
 
 const HamburgerMenu = ({ className, menuItems = [] }) => {

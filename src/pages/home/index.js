@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Schedule from '@/components/Schedule'
 import Sponsors from '@/components/Sponsors'
 import Speakers from '@/components/Speakers'
@@ -8,7 +8,6 @@ import HeroSection from './HeroSection'
 import Footer from './Footer'
 import FloatingButton from '@/components/FloatingButton'
 import Join from '@/components/Join'
-import useScript from './useScript'
 
 const Home = () => {
   const aboutSectionRef = React.useRef(null)
