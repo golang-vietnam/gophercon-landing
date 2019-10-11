@@ -1,0 +1,10 @@
+.bw-hover {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+
+.bw-hover:hover {
+  filter: none;
+  -webkit-filter: none;
+}

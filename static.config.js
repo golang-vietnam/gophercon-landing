@@ -1,23 +1,43 @@
-import Document from './src/Document'
+import path from 'path'
 import { siteRoot } from './src/config'
-import webpack from './webpack.config'
 
 export default {
-  plugins: ['react-static-plugin-preact'],
   siteRoot: siteRoot,
-  bundleAnalyzer: !!process.env.BUNDLE_ANALYZE,
-  Document,
+  plugins: [
+    'react-static-plugin-reach-router',
+    [
+      'react-static-plugin-favicons',
+      {
+        inputFile: path.resolve(__dirname, './public/favicons/favicon.png'),
+        configuratin: {
+          appName: 'GopherCon Vietnam 2019',
+          appDescription: 'GopherCon Vietnam 2019',
+          developerName: null,
+          developerURL: null,
+        },
+      },
+    ],
+  ],
   getRoutes: async () => {
     return [
       {
         path: '/',
-        component: 'src/containers/home',
-      },      
+        template: 'src/pages/home',
+      },
       {
         path: '404',
-        component: 'src/containers/404',
+        template: 'src/pages/404',
       },
     ]
   },
-  webpack,
+  devServer: {
+    proxy: {
+      '/.netlify/functions': {
+        target: 'http://localhost:9000',
+        pathRewrite: {
+          '^/\\.netlify/functions': '',
+        },
+      },
+    },
+  },
 }

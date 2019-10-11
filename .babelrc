@@ -1,6 +1,8 @@
 {
-  "extends": "react-static/.babelrc",
+  "presets": ["react-static/babel-preset.js", "linaria/babel"],
   "plugins": [
+    "@babel/plugin-proposal-optional-chaining",
+    "babel-plugin-classnames",
     "macros"
   ]
 }

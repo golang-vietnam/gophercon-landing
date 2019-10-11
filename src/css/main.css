@@ -2,36 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --white: #ffffff;
-  --white-75: rgba(255, 255, 255, 0.75);
-  --white-50: rgba(255, 255, 255, 0.5);
-  --white-25: rgba(255, 255, 255, 0.25);
-
-  --blue: #87CEFA;
-  --black: #23252c;
-  --black-75: rgba(0, 0, 0, 0.75);
-  --black-50: rgba(0, 0, 0, 0.5);
-  --black-25: rgba(0, 0, 0, 0.25);
-
-  --primary: #ffbb00;
-  --error: #d0021b;
-
-  --grey-lightest: #f8f8f8;
-
-  --gutter: 2rem; /* 32px */
-}
-
+html,
 body {
   font-size: 16px;
-  font-display: fallback;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 *,

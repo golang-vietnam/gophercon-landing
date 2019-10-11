@@ -1,4 +1,4 @@
-export const siteRoot = (() => {
+exports.siteRoot = (() => {
   // handles conditional `siteRoot` on Netlify environment
   function getSiteRoot(context = '') {
     // get Netlify deploy urls
