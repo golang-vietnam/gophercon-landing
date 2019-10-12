@@ -27,7 +27,7 @@ class AutoHeader extends Component {
     return (
       <div
         className={[
-          'flex items-center fixed z-30 top-0 left-0 w-screen shadow bg-primary',
+          'fixed z-30 top-0 left-0 w-screen shadow bg-primary',
           css`
             height: 64px;
             opacity: 0;

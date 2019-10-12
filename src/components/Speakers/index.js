@@ -1,15 +1,10 @@
 import React from 'react'
 import { css } from 'linaria'
 import speakers from './speakers'
-require('default-passive-events')
 
 const Speakers = ({ ...rest }) => {
   return (
-    <div
-      id="speakers"
-      className={'page-section py-16 lg:py-25 bg-primary'}
-      {...rest}
-    >
+    <div className={'page-section py-16 lg:py-25 bg-primary'} {...rest}>
       <div className="container">
         <div className={['mb-16 md:flex md:justify-between md:items-center']}>
           <div
