@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Schedule from '@/components/Schedule'
 import Sponsors from '@/components/Sponsors'
 import Speakers from '@/components/Speakers'
