@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AnimatedMenuIcon = ({ isActive = false, toggleActive }) => {
+const AnimatedMenuIcon = ({ isActive, toggleActive }) => {
   return (
     <div>
       <div
