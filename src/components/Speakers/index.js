@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from 'linaria'
 import speakers from './speakers'
+require('default-passive-events')
 
 const Speakers = ({ ...rest }) => {
   return (
