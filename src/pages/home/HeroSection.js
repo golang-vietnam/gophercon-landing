@@ -1,13 +1,12 @@
 import React from 'react'
 import { css } from 'linaria'
 import LazyImage from '@/components/LazyImage'
-import Header from './Header'
 import SvgArrow from './images/horizontal-arrow.svg?svgr'
+import Header from './Header'
 
-const HeroSection = ({ ...rest }) => {
+const HeroSection = ({ active, ...rest }) => {
   return (
     <section
-      id="home"
       className={[
         'page-section bg-primary relative',
         css`
@@ -18,21 +17,10 @@ const HeroSection = ({ ...rest }) => {
       ]}
       {...rest}
     >
-      <Header
-        className={[
-          css`
-            --mobile-menu-top: 64px;
-
-            @screen md {
-              height: 100px;
-              --mobile-menu-top: 100px;
-            }
-          `,
-        ]}
-      />
+      <Header active={active} />
       <div
         className={[
-          'container w-full mt-24 md:mt-32 lg:mt-48',
+          'container w-full pt-24 md:pt-32 lg:pt-48',
           css`
             min-height: 450px;
             @screen md {

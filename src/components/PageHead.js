@@ -4,7 +4,7 @@ import { siteRoot } from '@/config'
 
 const siteName = 'GopherCon Vietnam 2019'
 const defaultTitle = 'GopherCon Vietnam 2019'
-const defaultDesc = ``
+const defaultDesc = `GopherCon Vietnam 2019 is the second Golang conference held in Vietnam. Join us and have fun. We believe this GopherCon will help to build a better connection between Vietnam gophers and bring values to the Tech community.`
 export const defaultKeywords = [
   'gopher',
   'gophercon',

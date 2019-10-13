@@ -5,90 +5,101 @@ import LazyImage from '@/components/LazyImage'
 
 const menu = [
   {
-    name: 'Home',
+    name: 'home',
     href: '#home',
   },
   {
-    name: 'Schedule',
+    name: 'schedule',
     href: '#schedule',
   },
   {
-    name: 'Speakers',
+    name: 'speakers',
     href: '#speakers',
   },
   {
-    name: 'Sponsors',
+    name: 'sponsors',
     href: '#sponsors',
   },
 ]
 
-const Header = ({ children, className }) => {
+const Header = ({ active }) => {
+  const handleClick = id => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+  }
   return (
-    <header
-      className={[
-        className,
-        'container xs:col text-right flex justify-between items-center text-white focus:text-blue',
-        css`
-          height: 100px;
-        `,
-      ]}
-    >
-      <LazyImage
-        {...require('./images/headerLogo.png?sqip')}
-        alt="header logo"
+    <div className="bg-primary  w-screen fixed top-0 z-30">
+      <header
         className={[
+          'container xs:col text-right flex justify-between items-center text-white bg-primary',
           css`
-            width: 118px;
-            height: 35px;
+            height: 64px;
+            --mobile-menu-top: 64px;
+
             @screen md {
-              width: 170px;
-              height: 54px;
+              height: 100px;
+              --mobile-menu-top: 100px;
             }
           `,
         ]}
-      />
-      <nav
-        className={[
-          'h-full hidden md:block',
-          css`
-            max-width: 1300px;
-          `,
-        ]}
       >
-        <ul
-          id="top-menu"
+        <LazyImage
+          {...require('./images/headerLogo.png?sqip')}
+          alt="header logo"
           className={[
-            'h-full flex',
             css`
-              @media (min-width: 1400px) {
-                @apply -mx-5;
+              width: 118px;
+              height: 35px;
+              @screen md {
+                width: 170px;
+                height: 54px;
               }
             `,
           ]}
+        />
+        <nav
+          className={[
+            'h-full hidden sm:visible md:block',
+            css`
+              max-width: 1300px;
+            `,
+          ]}
         >
-          {menu.map((e, i) => (
-            <li
-              key={i}
-              className="inline-flex items-center text-base font-semibold px-5"
-            >
-              <a
-                href={e.href}
-                className={[
-                  'hover:text-blue inline-block flex-auto',
-                  typeof window !== 'undefined' &&
-                    window.location.href.includes(e.href) &&
-                    'active',
-                ]}
+          <ul
+            id="top-menu"
+            className={[
+              'h-full flex items-center',
+              css`
+                @media (min-width: 1400px) {
+                  @apply -mx-5;
+                }
+              `,
+            ]}
+          >
+            {menu.map((e, i) => (
+              <li
+                key={i}
+                className="inline-flex items-center text-base font-semibold px-5 capitalize"
               >
-                {e.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+                <a
+                  onClick={() => {
+                    handleClick(e.name)
+                  }}
+                  href={e.href}
+                  className={[
+                    'hover:text-blue inline-block flex-auto',
+                    active === e.name && 'text-blue',
+                  ]}
+                >
+                  {e.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-      <HamburgerMenu menuItems={menu} />
-    </header>
+        <HamburgerMenu menuItems={menu} active={active} />
+      </header>
+    </div>
   )
 }
 

@@ -74,7 +74,7 @@ const rows = [
 
 const Sponsors = ({ ...rest }) => {
   return (
-    <div id="sponsors" className="page-section pt-16 lg:py-25" {...rest}>
+    <div className="page-section pt-16 lg:py-25" {...rest}>
       <div className="container text-grey">
         <div className="mb-16 text-center  md:flex md:justify-between md:items-center">
           <div
@@ -83,12 +83,6 @@ const Sponsors = ({ ...rest }) => {
             ]}
           >
             Sponsors
-          </div>
-          <div
-            className="font-medium text-base w-48 py-2 text-white bg-primary inline-block"
-            href="#"
-          >
-            <a>Become a sponsor</a>
           </div>
         </div>
         {rows.map(({ name, sponsors }) => (
