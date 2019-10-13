@@ -22,7 +22,7 @@ const menu = [
   },
 ]
 
-const Header = ({ active, children }) => {
+const Header = ({ active }) => {
   const handleClick = id => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
   }
