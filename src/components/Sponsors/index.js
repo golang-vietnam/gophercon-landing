@@ -84,12 +84,6 @@ const Sponsors = ({ ...rest }) => {
           >
             Sponsors
           </div>
-          <div
-            className="font-medium text-base w-48 py-2 text-white bg-primary inline-block"
-            href="#"
-          >
-            <a>Become a sponsor</a>
-          </div>
         </div>
         {rows.map(({ name, sponsors }) => (
           <div className="row flex flex-wrap" key={name}>
