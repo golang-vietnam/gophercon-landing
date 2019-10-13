@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import { css } from 'linaria'
 import AnimatedMenuIcon from './AnimatedMenuIcon'
-const bodyScrollLock = require('body-scroll-lock')
-const disableBodyScroll = bodyScrollLock.disableBodyScroll
-const enableBodyScroll = bodyScrollLock.enableBodyScroll
+import lockBodyScroll from '@/utils/lockBodyScroll'
 
 const HamburgerMenu = ({ className, active, menuItems = [] }) => {
   const [isActive, setIsActive] = useState(false)
   const lockSection = document.getElementById('page')
 
   if (isActive) {
-    disableBodyScroll(lockSection)
+    lockBodyScroll({ lock: true })
+  }
+  if (!isActive) {
+    lockBodyScroll({ lock: false })
   }
   const toggleActive = () => {
     setIsActive(!isActive)
@@ -27,7 +28,6 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
     labelRef.current.click()
     document.getElementById(menuItem).scrollIntoView({ behavior: 'smooth' })
     toggleActive()
-    enableBodyScroll(lockSection)
   }
 
   return (
