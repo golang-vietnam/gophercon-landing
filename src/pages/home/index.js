@@ -17,7 +17,9 @@ function Home() {
     let top, currentSection
     debounce(
       document.addEventListener('scroll', () => {
-        top = window.pageYOffset
+        if (typeof window !== 'undefined') {
+          top = window.pageYOffset
+        }
         currentSection = getCurrentSection(top)
         currentSection && setActive(currentSection)
         history.replaceState(null, null, `#${currentSection}`)
@@ -26,7 +28,7 @@ function Home() {
     )
   }, [])
   return (
-    <div id="page" className="relative">
+    <div className="relative">
       <HeroSection active={active} id="home" />
       <Schedule id="schedule" />
       <Join id="join" />

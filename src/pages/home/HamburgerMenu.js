@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
 import { css } from 'linaria'
 import AnimatedMenuIcon from './AnimatedMenuIcon'
-import lockBodyScroll from '@/utils/lockBodyScroll'
 
 const HamburgerMenu = ({ className, active, menuItems = [] }) => {
   const [isActive, setIsActive] = useState(false)
-  const lockSection = document.getElementById('page')
 
   if (isActive) {
-    lockBodyScroll({ lock: true })
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = 'hidden'
+    }
   }
   if (!isActive) {
-    lockBodyScroll({ lock: false })
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = 'auto'
+    }
   }
   const toggleActive = () => {
     setIsActive(!isActive)
@@ -26,7 +28,9 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
   )
   const handleClick = menuItem => {
     labelRef.current.click()
-    document.getElementById(menuItem).scrollIntoView({ behavior: 'smooth' })
+    if (typeof document !== 'undefined') {
+      document.getElementById(menuItem).scrollIntoView({ behavior: 'smooth' })
+    }
     toggleActive()
   }
 
@@ -90,7 +94,9 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
               href={e.href}
               className={[
                 'inline-block text-center text-grey text-2xl font-medium flex-auto py-3 capitalize',
-                window && window.location.hash === e.href && 'text-blue',
+                typeof window !== 'undefined' &&
+                  window.location.hash === e.href &&
+                  'text-blue',
               ]}
               onClick={() => handleClick(e.name)}
             >

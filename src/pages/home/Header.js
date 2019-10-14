@@ -24,7 +24,7 @@ const menu = [
 
 const Header = ({ active }) => {
   const handleClick = id => {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+    // document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
   }
   return (
     <div className="bg-primary  w-screen fixed top-0 z-30">
