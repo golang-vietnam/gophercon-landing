@@ -94,20 +94,19 @@ const Sponsors = ({ ...rest }) => {
             </div>
             {sponsors.map(({ href, image }) => (
               <div
-                className="col sm:w-1/3 h-48 sm:mx-0 mx-auto mb-8 md:mb-16 flex justify-between items-center"
+                className={[
+                  'col sm:w-1/3 sm:mx-0 mx-auto mb-8 md:mb-16 flex justify-between items-center border',
+                  css`
+                    &:hover {
+                      box-shadow: 15px 15px 30px 0 rgba(210, 210, 210, 0.5);
+                    }
+                  `,
+                ]}
                 key={image}
               >
                 <a
                   href={href}
-                  className={[
-                    'border w-full flex justify-center',
-                    css`
-                      &:hover {
-                        box-shadow: 15px 15px 30px 0 rgba(210, 210, 210, 0.5);
-                      }
-                      transition: box-shadow 0.3s linear;
-                    `,
-                  ]}
+                  className={['w-full flex justify-center']}
                   target="__blank"
                 >
                   <img
