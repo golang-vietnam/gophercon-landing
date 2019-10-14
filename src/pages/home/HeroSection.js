@@ -25,6 +25,7 @@ const HeroSection = ({ active, ...rest }) => {
             min-height: 450px;
             @screen md {
               @apply flex justify-between;
+              min-height: 800px;
             }
           `,
         ]}
