@@ -3,7 +3,7 @@ import { css } from 'linaria'
 
 const Join = ({ ...rest }) => {
   return (
-    <div className={'page-section md:pt-24 '} {...rest}>
+    <div className={'page-section pt-16 md:pt-24 '} {...rest}>
       <div className="container text-grey">
         <div className={['mb-16 md:flex md:justify-between md:items-center']}>
           <div

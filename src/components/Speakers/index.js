@@ -4,7 +4,7 @@ import speakers from './speakers'
 
 const Speakers = ({ ...rest }) => {
   return (
-    <div className={'page-section md:pt-24 bg-primary'} {...rest}>
+    <div className={'page-section pt-16 md:pt-24 bg-primary'} {...rest}>
       <div className="container">
         <div className={['mb-16 md:flex md:justify-between md:items-center']}>
           <div
