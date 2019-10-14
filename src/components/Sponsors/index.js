@@ -74,7 +74,7 @@ const rows = [
 
 const Sponsors = ({ ...rest }) => {
   return (
-    <div className="page-section pt-16 lg:py-25" {...rest}>
+    <div className="page-section md:pt-24 lg:py-25" {...rest}>
       <div className="container text-grey">
         <div className="mb-16 text-center  md:flex md:justify-between md:items-center">
           <div
@@ -92,26 +92,23 @@ const Sponsors = ({ ...rest }) => {
                 {name}
               </h4>
             </div>
-            {sponsors.map(({ href, image }) => (
+            {sponsors.map(({ name, href, image }) => (
               <div
                 className={[
-                  'col sm:w-1/3 sm:mx-0 mx-auto mb-8 md:mb-16 flex justify-between items-center border',
+                  'col sm:w-1/4 sm:h-32 md:h-48 mr-4 mb-8 flex justify-between items-center border',
                   css`
                     &:hover {
                       box-shadow: 15px 15px 30px 0 rgba(210, 210, 210, 0.5);
+                      border: none;
                     }
                   `,
                 ]}
                 key={image}
               >
-                <a
-                  href={href}
-                  className={['w-full flex justify-center']}
-                  target="__blank"
-                >
+                <a href={href} target="__blank">
                   <img
-                    alt=""
-                    className="bw-hover"
+                    alt={name}
+                    className="bw-hover object-cover"
                     src={`/images/${image}_shrink.png`}
                     srcSet={`/images/${image}@2x_shrink.png 2x`}
                   />

@@ -195,7 +195,7 @@ const Schedule = ({ ...rest }) => {
     return String(path).substr(0, 4) === 'http'
   }
   return (
-    <div className="page-section container my-12 md:my-24" {...rest}>
+    <div className="page-section container md:pt-24" {...rest}>
       <div className="row md:col text-grey">
         <div className="container font-bold text-3xl md:text-5xl text-primary border-b pb-10">
           Schedule
@@ -216,13 +216,13 @@ const Schedule = ({ ...rest }) => {
                       <div className="mt-4" key={index}>
                         {!isRemoteSrc(avatar) && (
                           <LazyImage
-                            className="w-16 mr-4 flex-shrink-0"
+                            className="w-16 h-16 mr-4 flex-shrink-0 object-cover"
                             {...require(`${avatar}?sqip`)}
                           />
                         )}
                         {isRemoteSrc(avatar) && (
                           <img
-                            className="w-16 mr-4 rounded-full flex-shrink-0"
+                            className="w-16 h-16 mr-4 rounded-full flex-shrink-0 object-cover"
                             src={avatar}
                           />
                         )}

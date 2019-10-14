@@ -8,7 +8,7 @@ const HeroSection = ({ active, ...rest }) => {
   return (
     <section
       className={[
-        'page-section bg-primary relative',
+        'md:pt-24 page-section bg-primary relative',
         css`
           @screen lg {
             min-height: 800px;

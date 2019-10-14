@@ -24,10 +24,12 @@ const menu = [
 
 const Header = ({ active }) => {
   const handleClick = id => {
-     document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+    })
   }
   return (
-    <div className="bg-primary  w-screen fixed top-0 z-30">
+    <div id="header" className="bg-primary w-screen fixed top-0 z-30">
       <header
         className={[
           'container xs:col text-right flex justify-between items-center text-white bg-primary',
