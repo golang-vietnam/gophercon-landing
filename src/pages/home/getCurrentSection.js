@@ -1,9 +1,14 @@
 function getCurrentSection(top) {
-  const elem1 = document.getElementById('home').offsetTop
-  const elem2 = document.getElementById('schedule').offsetTop
-  const elem3 = document.getElementById('join').offsetTop
-  const elem4 = document.getElementById('speakers').offsetTop
-  const elem5 = document.getElementById('sponsors').offsetTop
+  let elem1, elem2, elem3, elem4, elem5
+  if (typeof window !== 'undefined') {
+    if (typeof document !== 'undefined') {
+      elem1 = document.getElementById('home').offsetTop
+      elem2 = document.getElementById('schedule').offsetTop
+      elem3 = document.getElementById('join').offsetTop
+      elem4 = document.getElementById('speakers').offsetTop
+      elem5 = document.getElementById('sponsors').offsetTop
+    }
+  }
   if (top < elem2) {
     return 'home'
   }
