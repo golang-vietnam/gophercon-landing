@@ -195,7 +195,7 @@ const Schedule = ({ ...rest }) => {
     return String(path).substr(0, 4) === 'http'
   }
   return (
-    <div className="page-section container md:pt-24" {...rest}>
+    <div className="page-section container pt-16 md:pt-24" {...rest}>
       <div className="row md:col text-grey">
         <div className="container font-bold text-3xl md:text-5xl text-primary border-b pb-10">
           Schedule

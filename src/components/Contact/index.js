@@ -4,7 +4,7 @@ import { css } from 'linaria'
 const Contact = ({ ...rest }) => {
   return (
     <div id="contact" className="page-section bg-primary" {...rest}>
-      <div className={['container py-12 md:py-24']}>
+      <div className={['container py-16 md:py-24']}>
         <div className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-0">
           Venue
         </div>
