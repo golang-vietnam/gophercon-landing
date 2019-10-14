@@ -28,7 +28,6 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
   )
   const handleClick = menuItem => {
     labelRef.current.click()
-
     if (typeof document !== 'undefined') {
       document.getElementById(menuItem).scrollIntoView({ behavior: 'smooth' })
     }
@@ -95,7 +94,7 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
               href={e.href}
               className={[
                 'inline-block text-center text-grey text-2xl font-medium flex-auto py-3 capitalize',
-                active === e.name && 'text-blue',
+                active === e.name && 'text-blue'
               ]}
               onClick={() => handleClick(e.name)}
             >
