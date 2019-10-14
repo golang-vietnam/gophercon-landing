@@ -9,7 +9,7 @@
     "build": "rm -rf dist; react-static build",
     "build:analyze": "react-static build --analyze",
     "prebuild:netlify": "scripts/get-netlify-url.js",
-    "build:netlify": "export SITE_ROOT=$(scripts/get-netlify-url.js) && yarn build && yarn install:lambda && yarn build:lambda",
+    "build:netlify": "export SITE_ROOT=$(scripts/get-netlify-url.js) && yarn build",
     "build:prod": "yarn build && yarn subfont",
     "subfont": "subfont ./dist/index.html -i --root ./dist --canonicalroot $(scripts/get-netlify-url.js)/ --inline-css",
     "serve": "serve dist -l 8000",
