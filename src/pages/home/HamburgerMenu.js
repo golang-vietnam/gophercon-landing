@@ -94,9 +94,7 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
               href={e.href}
               className={[
                 'inline-block text-center text-grey text-2xl font-medium flex-auto py-3 capitalize',
-                typeof window !== 'undefined' &&
-                  window.location.hash === e.href &&
-                  'text-blue',
+                active === e.name && 'text-blue',
               ]}
               onClick={() => handleClick(e.name)}
             >
