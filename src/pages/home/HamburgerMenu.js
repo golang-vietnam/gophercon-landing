@@ -27,11 +27,11 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
     []
   )
   const handleClick = menuItem => {
-    labelRef.current.click()
     if (typeof document !== 'undefined') {
       document.getElementById(menuItem).scrollIntoView({ behavior: 'smooth' })
     }
     toggleActive()
+    labelRef.current.click()
   }
 
   return (
@@ -88,13 +88,15 @@ const HamburgerMenu = ({ className, active, menuItems = [] }) => {
         {menuItems.map((e, i) => (
           <li
             key={i}
-            className="flex items-center text-base font-semibold px-5"
+            className="flex items-center text-base font-semibold px-5 text-grey"
           >
             <a
               href={e.href}
               className={[
-                'inline-block text-center text-grey text-2xl font-medium flex-auto py-3 capitalize',
-                active === e.name && 'text-blue'
+                'inline-block text-center text-2xl font-medium flex-auto py-3 capitalize',
+                typeof window !== 'undefined' &&
+                  window.location.hash === e.href &&
+                  'text-blue',
               ]}
               onClick={() => handleClick(e.name)}
             >
