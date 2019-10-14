@@ -11,21 +11,23 @@ import debounce from '@/utils/debounce'
 import getCurrentSection from './getCurrentSection'
 
 function Home() {
-  let [active, setActive] = useState(undefined)
+  let [active, setActive] = useState('home')
 
   useEffect(() => {
     let top, currentSection
-    debounce(
-      document.addEventListener('scroll', () => {
-        if (typeof window !== 'undefined') {
-          top = window.pageYOffset
-        }
-        currentSection = getCurrentSection(top)
-        currentSection && setActive(currentSection)
-        history.replaceState(null, null, `#${currentSection}`)
-      }),
-      300
-    )
+    if (typeof document !== 'undefined') {
+      debounce(
+        document.addEventListener('scroll', () => {
+          if (typeof window !== 'undefined') {
+            top = window.pageYOffset
+          }
+          currentSection = getCurrentSection(top)
+          currentSection && setActive(currentSection)
+          history.replaceState(null, null, `#${currentSection}`)
+        }),
+        300
+      )
+    }
   }, [])
   return (
     <div className="relative">

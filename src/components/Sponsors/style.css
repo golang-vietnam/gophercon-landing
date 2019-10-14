@@ -7,4 +7,5 @@
 .bw-hover:hover {
   filter: none;
   -webkit-filter: none;
+  border: none;
 }
