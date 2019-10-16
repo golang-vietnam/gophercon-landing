@@ -34,6 +34,10 @@ const rows = [
         href: 'https://www.vng.com.vn/',
         image: 'vng',
       },
+      {
+        href: 'https://www.ninjavan.co/vi-vn',
+        image: 'ninja-van',
+      },
     ],
   },
   {
