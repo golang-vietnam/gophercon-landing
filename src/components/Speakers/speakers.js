@@ -71,7 +71,7 @@ const speakers = [
       <LazyImage {...props} {...require('./images/10.png?sqip')} />
     ),
     name: 'Manh Dao',
-    position: 'Software Engineer at MoneyForward',
+    position: 'Software Engineer at Money Forward',
   },
 ]
 export default speakers

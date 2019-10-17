@@ -82,7 +82,7 @@ const schedule = [
         'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/eudn8m23lh_IMG_1104.JPG',
       ],
       name: 'Manh Dao',
-      position: 'Software Engineer at MoneyForward',
+      position: 'Software Engineer at Money Forward',
     },
     // link: 'https://ask.gophercon.vn/event/KIRP',
   },
