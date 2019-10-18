@@ -94,16 +94,17 @@ const Sponsors = ({ ...rest }) => {
           </div>
         </div>
         {rows.map(({ name, sponsors }) => (
-          <div className="row flex flex-wrap" key={name}>
-            <div className="col w-full">
+          <div className="container flex flex-wrap" key={name}>
+            <div className="w-full">
               <h4 className="font-bold mb-10 text-2xl text-center sm:text-left">
                 {name}
               </h4>
             </div>
-            {sponsors.map(({ name, href, image }) => (
+            {sponsors.map(({ name, href, image, key }) => (
               <div
                 className={[
-                  'col sm:w-1/4 sm:h-32 md:h-48 mr-4 mb-8 flex justify-between items-center border',
+                  'col w-full sm:container sm:w-32 sm:h-32 md:w-1/4 md:h-auto mb-8 flex items-center border',
+                  key !== sponsors.length && 'sm:mr-4',
                   css`
                     &:hover {
                       box-shadow: 15px 15px 30px 0 rgba(210, 210, 210, 0.5);
@@ -116,7 +117,7 @@ const Sponsors = ({ ...rest }) => {
                 <a href={href} target="__blank">
                   <img
                     alt={name}
-                    className="bw-hover object-cover"
+                    className="bw-hover object-cover overflow-hidden"
                     src={`/images/${image}_shrink.png`}
                     srcSet={`/images/${image}@2x_shrink.png 2x`}
                   />
