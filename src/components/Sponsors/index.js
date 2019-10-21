@@ -103,7 +103,7 @@ const Sponsors = ({ ...rest }) => {
             {sponsors.map(({ name, href, image, key }) => (
               <div
                 className={[
-                  'col w-full sm:container sm:w-32 sm:h-32 md:w-1/4 md:h-auto mb-8 flex items-center border',
+                  'col w-full sm:container sm:w-32 sm:h-32 md:w-1/4 md:h-auto py-4 mb-8 flex items-center border',
                   key !== sponsors.length && 'sm:mr-4',
                   css`
                     &:hover {
@@ -117,7 +117,7 @@ const Sponsors = ({ ...rest }) => {
                 <a href={href} target="__blank">
                   <img
                     alt={name}
-                    className="bw-hover object-cover overflow-hidden"
+                    className="bw-hover object-fit"
                     src={`/images/${image}_shrink.png`}
                     srcSet={`/images/${image}@2x_shrink.png 2x`}
                   />
