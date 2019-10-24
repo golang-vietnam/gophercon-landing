@@ -52,7 +52,7 @@ const rows = [
         image: 'dwarves',
       },
       {
-        href: 'https://corp.moneyforward.com/en/',
+        href: 'https://careers.moneyforward.vn',
         image: 'money-forward',
       },
     ],
