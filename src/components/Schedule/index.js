@@ -60,7 +60,7 @@ const schedule = [
   },
   {
     highlighted: false,
-    time: '11:00',
+    time: '11:15',
     title: 'A colorful journey of be from NodeJS to Go',
     content:
       'Sooner or later, everyone of us, must face a beast, called legacy, the code maintained by someone not the author. Let me tell you how we face and beat it, a journey from a black hole 100k LOC monolithic application to 100+ microservices',
@@ -109,7 +109,7 @@ const schedule = [
   },
   {
     highlighted: false,
-    time: '13:45',
+    time: '13:40',
     title:
       'How to leverage Gunk - the Go-derived syntax for Protocol Buffers to massively write microservices',
     content:
@@ -125,7 +125,7 @@ const schedule = [
   },
   {
     highlighted: false,
-    time: '14:30',
+    time: '14:15',
     title: `করো: Translating Go to Other (Human) Languages, and Back Again`,
     content:
       'This talk shows the necessary steps for translating Go to other languages. It focuses mostly on the technical (compiler + toolchain) aspects, but it also highlights some techniques for localizing aspects like comments, documentation, and support mailing lists. This talk is also an excuse to show off Go’s support for UTF-8, as well as to highlight the unique way that Go handles bytes and strings under the hood. ',
@@ -140,7 +140,7 @@ const schedule = [
   },
   {
     highlighted: false,
-    time: '15:15',
+    time: '15:00',
     title: `Why you can't use GO ! (away from anti patterns)`,
     content:
       'We’ve seen Go being used widely in high performant backend applications, gRPC, embedded systems and so on. Not Choosing Go, needs more understanding and convincing. Obvious thing would be reflection, Will see use case and code, also will cover how go differs from our assumption.',
@@ -156,7 +156,7 @@ const schedule = [
   },
   {
     highlighted: false,
-    time: '16:00',
+    time: '15:40',
     title: 'Overcoming latency, How we build a Cloud Game service with Go',
     content:
       'CloudGaming is the new buzzword recently with the participation of Google Stadia, Microsoft Xcloud. Behind Cloud Gaming is the art of super-low latency media streaming. Let’s find out how I can use Golang stack to create a Cloud Gaming platform that can bring the smoothest gaming experience.',
@@ -171,22 +171,28 @@ const schedule = [
     // link: 'https://ask.gophercon.vn/event/KYMW',
   },
   {
+    highlighted: false,
+    time: '16:20',
+    title: 'Image Processing Service: From On-Premise To Cloud Function With Golang',
+    content:
+      '5 years ago, the image service was a small piece of code in a huge monolithic code on a big server, now it is just simply a bunch of functions in Go without "a server"',
+    speaker: {
+      avatar: [
+        'https://jonathanmh.com/wp-content/uploads/2018/01/jonathan-gopher-1200x1285.png',
+      ],
+      name: 'Dat Tran',
+      position: 'Software Engineer at ChoTot',
+    },
+    // link: 'https://ask.gophercon.vn/event/KYMW',
+  },
+  {
     highlighted: true,
     time: '16:45',
     title: 'Closing talk',
-    // desc:
-    //   'Writing Microservices which can withstand the unpredictable nature of the production environment at scale is a non-trivial task. Certain practices can help make our systems 6 predictable, transparent and resilient. For developers this means more confident and continuous deployments.',
-    // speaker: {
-    //   avatar:
-    //     'https://secure.gravatar.com/avatar/15a0a233d3bf86fea7bbaa525f33897d?s=500',
-    //   name: 'Rajeev N Bharshetty',
-    //   desc: 'Product Engineer @ GO-JEK',
-    // },
-    // link: 'https://ask.gophercon.vn/event/GYWJ',
   },
   {
     highlighted: false,
-    time: '17:30',
+    time: '17:00',
     title: 'Closing',
   },
 ]
