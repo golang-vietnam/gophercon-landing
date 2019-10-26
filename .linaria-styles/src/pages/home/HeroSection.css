@@ -1,5 +1,5 @@
 @screen lg{.s1m6tdth{min-height:800px;}}
-.d15n3xca{min-height:450px;}@screen md{.d15n3xca{@apply flex justify-between;}}
+.d15n3xca{min-height:450px;}@screen md{.d15n3xca{@apply flex justify-between;min-height:800px;}}
 .ddapylv{@apply justify-center;}@screen md{.ddapylv{@apply justify-center;}}@screen lg{.ddapylv{@apply justify-end;}}
 .l1ql4s40{width:240px;height:226px;margin-bottom:80px;}@screen md{.l1ql4s40{width:300px;height:260px;margin-bottom:0px;position:absolute;bottom:90px;}@screen lg{.l1ql4s40{width:440px;height:418px;margin-bottom:0px;position:absolute;bottom:150px;}}}
 .dcmbdvy{@apply bottom-0 left-0 absolute w-full z-10;background-image:url(../../../../src/pages/home/images/heroBg.png);background-size:contain;background-repeat-x:repeat;background-repeat-y:no-repeat;background-position:center;height:95px;}@screen lg{.dcmbdvy{height:170px;}}
