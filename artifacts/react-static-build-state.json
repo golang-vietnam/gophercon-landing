@@ -1,0 +1,74 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "entry": "index.js",
+  "siteRoot": "/",
+  "plugins": [
+    "react-static-plugin-reach-router",
+    [
+      "react-static-plugin-favicons",
+      {
+        "inputFile": "/Users/ngochangjelly/Desktop/gophercon-landing/public/favicons/favicon.png",
+        "configuratin": {
+          "appName": "GopherCon Vietnam 2019",
+          "appDescription": "GopherCon Vietnam 2019",
+          "developerName": null,
+          "developerURL": null
+        }
+      }
+    ],
+    "/Users/ngochangjelly/Desktop/gophercon-landing"
+  ],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000,
+    "proxy": {
+      "/.netlify/functions": {
+        "target": "http://localhost:9000",
+        "pathRewrite": {
+          "^/\\.netlify/functions": ""
+        }
+      }
+    }
+  },
+  "paths": {
+    "ROOT": "/Users/ngochangjelly/Desktop/gophercon-landing",
+    "SRC": "/Users/ngochangjelly/Desktop/gophercon-landing/src",
+    "DIST": "/Users/ngochangjelly/Desktop/gophercon-landing/dist",
+    "ASSETS": "/Users/ngochangjelly/Desktop/gophercon-landing/dist",
+    "PLUGINS": "/Users/ngochangjelly/Desktop/gophercon-landing/plugins",
+    "TEMP": "/Users/ngochangjelly/Desktop/gophercon-landing/tmp",
+    "ARTIFACTS": "/Users/ngochangjelly/Desktop/gophercon-landing/artifacts",
+    "PUBLIC": "/Users/ngochangjelly/Desktop/gophercon-landing/public",
+    "NODE_MODULES": "/Users/ngochangjelly/Desktop/gophercon-landing/node_modules",
+    "EXCLUDE_MODULES": "/Users/ngochangjelly/Desktop/gophercon-landing/node_modules",
+    "PACKAGE": "/Users/ngochangjelly/Desktop/gophercon-landing/package.json",
+    "HTML_TEMPLATE": "/Users/ngochangjelly/Desktop/gophercon-landing/dist/index.html",
+    "STATIC_DATA": "/Users/ngochangjelly/Desktop/gophercon-landing/dist/staticData"
+  },
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
