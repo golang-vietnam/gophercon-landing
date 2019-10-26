@@ -107,7 +107,7 @@ const Sponsors = ({ ...rest }) => {
             {sponsors.map(({ name, href, image, key }) => (
               <div
                 className={[
-                  'col w-full sm:container sm:w-32 sm:h-32 md:w-1/5 sm:h-auto py-4 mb-8 flex items-center justify-between border',
+                  'col w-full sm:container sm:w-32 sm:h-32 md:w-1/5 sm:h-auto py-4 mb-8 flex items-center  border',
                   key !== sponsors.length && 'sm:mr-4',
                   css`
                     &:hover {
