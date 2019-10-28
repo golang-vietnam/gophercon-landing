@@ -173,13 +173,12 @@ const schedule = [
   {
     highlighted: false,
     time: '16:20',
-    title: 'Image Processing Service: From On-Premise To Cloud Function With Golang',
+    title:
+      'Image Processing Service: From On-Premise To Cloud Function With Golang',
     content:
       '5 years ago, the image service was a small piece of code in a huge monolithic code on a big server, now it is just simply a bunch of functions in Go without "a server"',
     speaker: {
-      avatar: [
-        'https://jonathanmh.com/wp-content/uploads/2018/01/jonathan-gopher-1200x1285.png',
-      ],
+      avatar: ['./images/chotot-speaker.jpg'],
       name: 'Dat Tran',
       position: 'Software Engineer at ChoTot',
     },
@@ -222,7 +221,7 @@ const Schedule = ({ ...rest }) => {
                       <div className="mt-4" key={index}>
                         {!isRemoteSrc(avatar) && (
                           <LazyImage
-                            className="w-16 h-16 mr-4 flex-shrink-0 object-cover"
+                            className="w-16 h-16 mr-4 flex-shrink-0 object-cover rounded-full"
                             {...require(`${avatar}?sqip`)}
                           />
                         )}
