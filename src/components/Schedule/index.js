@@ -21,7 +21,7 @@ const schedule = [
       'End the wars with Tanuki - Multiple programming languages in single web application.',
     speaker: {
       avatar: [
-        'https://media.licdn.com/dms/image/C5103AQEzEldCV1TSIQ/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=4O2RyC1E6yXRiE75H2BxD8LBUBCH3GF_diCU7kGbiyY',
+        'https://s3-ap-southeast-1.amazonaws.com/kipalog.com/ekv151rz6d_1.png',
       ],
       name: 'Sau Sheong Chang',
       position: 'CEO Singapore Power Digital, founder GopherCon Singapore',
