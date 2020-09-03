@@ -64,7 +64,7 @@
     "purgecss-whitelister": "^1.2.0",
     "react-static-plugin-favicons": "^2.0.0",
     "sass-loader": "^7.1.0",
-    "serve": "10.1.1",
+    "serve": "10.1.2",
     "sqip-loader": "^0.2.0",
     "subfont": "^3.6.3",
     "tailwindcss": "^1.1.2"
