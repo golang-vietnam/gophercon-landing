@@ -58,7 +58,7 @@
     "lqip-loader": "^2.2.0",
     "lqip.macro": "^0.1.5",
     "netlify-lambda": "^1.6.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.15.3",
     "purgecss-webpack-plugin": "^0.22.0",
     "purgecss-whitelister": "^1.2.0",
